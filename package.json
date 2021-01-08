@@ -1,11 +1,11 @@
 {
-  "name": "@twilio-labs/react-hook-form-paste",
+  "name": "react-hook-form-paste",
   "version": "0.1.0",
   "description": "simple declarative bindings for react-hook-form and Twilio React Paste components.",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twilio-labs/react-hook-form-paste.git"
+    "url": "https://github.com/vnguyen94/react-hook-form-paste.git"
   },
   "files": [
     "dist",
