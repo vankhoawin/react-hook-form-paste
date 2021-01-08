@@ -1,4 +1,4 @@
-[Storybook](https://vnguyen94.github.io/react-hook-form-paste) | [Chromatic](https://www.chromatic.com/builds?appId=5ff88e281b679c0021a7a5ff) | [CHANGELOG](https://github.com/vnguyen94/react-hook-form-paste/releases) | [npm](https://www.npmjs.com/package/react-hook-form-paste)
+[Storybook](https://vnguyen94.github.io/react-hook-form-paste/) | [Chromatic](https://www.chromatic.com/builds?appId=5ff88e281b679c0021a7a5ff) | [CHANGELOG](https://github.com/vnguyen94/react-hook-form-paste/releases) | [npm](https://www.npmjs.com/package/react-hook-form-paste)
 
 # react-hook-form-paste
 
