@@ -1,0 +1,117 @@
+{
+  "name": "@twilio-labs/react-hook-form-paste",
+  "version": "0.1.0",
+  "description": "simple declarative bindings for react-hook-form and Twilio React Paste components.",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twilio-labs/react-hook-form-paste.git"
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "package.json",
+    "yarn.lock"
+  ],
+  "scripts": {
+    "lint": "yarn lint:js",
+    "lint:js": "yarn lint:js:base 'src' '*.js'",
+    "lint:js:base": "eslint --ext .js,.ts,.tsx",
+    "lint:fix": "yarn lint:js --fix",
+    "prettier": "yarn prettier:base -- \"**/*.{json,md,scss,yaml,yml,js,jsx,ts,tsx}\"",
+    "prettier:base": "prettier --config ./.prettierrc.js",
+    "build": "tsc",
+    "test": "jest",
+    "semantic-release": "semantic-release",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "keywords": [
+    "react",
+    "react-hook-form",
+    "twilio",
+    "paste",
+    "form"
+  ],
+  "author": "Twilio",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "yarn lint:js:base --fix",
+      "yarn prettier:base --write"
+    ],
+    "*.{json,md,scss,yaml,yml}": [
+      "yarn prettier:base --write"
+    ]
+  },
+  "peerDependencies": {
+    "@twilio-paste/core": "^4",
+    "@twilio-paste/icons": "^3",
+    "prop-types": "^15",
+    "react": "^16 | ^17",
+    "react-dom": "^16 | ^17",
+    "react-hook-form": "^6",
+    "react-uid": "^2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.0",
+    "@semantic-release/npm": "^7.0.9",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/addon-storyshots": "^6.1.11",
+    "@storybook/addons": "^6.1.11",
+    "@storybook/react": "^6.1.11",
+    "@storybook/storybook-deployer": "^2.8.7",
+    "@testing-library/jest-dom": "^5.11.8",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/react-hooks": "^4.0.0",
+    "@testing-library/user-event": "^12.6.0",
+    "@twilio-paste/core": "^4.2.7",
+    "@twilio-paste/icons": "^3.10.6",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "babel-loader": "^8.2.2",
+    "chromatic": "^5.5.0",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.17.0",
+    "eslint-config-twilio": "^1.31.0",
+    "eslint-config-twilio-react": "^1.31.0",
+    "eslint-config-twilio-ts": "^1.31.0",
+    "eslint-plugin-jest-dom": "^3.6.5",
+    "eslint-plugin-testing-library": "^3.10.1",
+    "husky": "^4.3.7",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.3",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-hook-form": "^6.13.1",
+    "react-test-renderer": "^17.0.1",
+    "react-uid": "2.3.0",
+    "semantic-release": "^17.3.1",
+    "ts-jest": "^26.4.4",
+    "ts-loader": "^8.0.14",
+    "typescript": "4.1.3"
+  }
+}
