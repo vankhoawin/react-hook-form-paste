@@ -3,7 +3,7 @@ name: Test and release
 on:
   pull_request:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   test:
@@ -41,8 +41,8 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_TOKEN }}
 
   release:
-    # Only release on push to master
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    # Only release on push to main
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     # Waits for test jobs for each Node.js version to complete
     needs: [test]
