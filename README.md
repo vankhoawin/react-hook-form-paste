@@ -1,10 +1,10 @@
-[Storybook](https://vnguyen94.github.io/react-hook-form-paste) | [Chromatic](https://www.chromatic.com/builds?appId=5f34d4bd7c13f1002276b19d) | [CHANGELOG](https://github.com/vnguyen94/react-hook-form-paste/releases) | [npm](https://www.npmjs.com/package/react-hook-form-paste)
+[Storybook](https://vnguyen94.github.io/react-hook-form-paste) | [Chromatic](https://www.chromatic.com/builds?appId=5ff88e281b679c0021a7a5ff) | [CHANGELOG](https://github.com/vnguyen94/react-hook-form-paste/releases) | [npm](https://www.npmjs.com/package/react-hook-form-paste)
 
 # react-hook-form-paste
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f9176f69724e4126bfc1c661883a4570)](https://app.codacy.com/manual/vnguyen/react-hook-form-paste)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/7e461392499a41ac9002241083d0fa66)](https://www.codacy.com/gh/vnguyen94/react-hook-form-paste/dashboard)
 [![Known Vulnerabilities](https://snyk.io/test/github/vnguyen94/react-hook-form-paste/badge.svg?targetFile=package.json)](https://snyk.io/test/github/vnguyen94/react-hook-form-paste?targetFile=package.json)
-[![codecov](https://codecov.io/gh/vnguyen94/react-hook-form-paste/branch/master/graph/badge.svg)](https://codecov.io/gh/vnguyen94/react-hook-form-paste)
+[![codecov](https://codecov.io/gh/vnguyen94/react-hook-form-paste/branch/main/graph/badge.svg?token=KNvD6Yw3Fs)](https://codecov.io/gh/vnguyen94/react-hook-form-paste)
 
 Super-charged [Paste](https://paste.twilio.design) components using [react-hook-form](https://github.com/react-hook-form/react-hook-form) to handle form state.
 
