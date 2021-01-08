@@ -12,7 +12,7 @@ exports[`Storyshots Checkbox Basic 1`] = `
       display="inline-flex"
     >
       <input
-        aria-describedby="10"
+        aria-describedby="11"
         className="css-l5ph6c"
         clip="rect(0 0 0 0)"
         disabled={false}
@@ -59,7 +59,7 @@ exports[`Storyshots Checkbox Basic 1`] = `
                 >
                   <svg
                     aria-hidden={true}
-                    aria-labelledby="CheckboxCheckIcon-11"
+                    aria-labelledby="CheckboxCheckIcon-12"
                     height="100%"
                     role="img"
                     viewBox="0 0 20 20"
@@ -129,7 +129,7 @@ exports[`Storyshots CheckboxDisclaimer Basic 1`] = `
         display="inline-flex"
       >
         <input
-          aria-describedby="12"
+          aria-describedby="13"
           aria-invalid={false}
           className="css-l5ph6c"
           clip="rect(0 0 0 0)"
@@ -177,7 +177,7 @@ exports[`Storyshots CheckboxDisclaimer Basic 1`] = `
                   >
                     <svg
                       aria-hidden={true}
-                      aria-labelledby="CheckboxCheckIcon-13"
+                      aria-labelledby="CheckboxCheckIcon-14"
                       height="100%"
                       role="img"
                       viewBox="0 0 20 20"
@@ -275,7 +275,7 @@ exports[`Storyshots CheckboxGroup Basic 1`] = `
             display="inline-flex"
           >
             <input
-              aria-describedby="14"
+              aria-describedby="15"
               className="css-l5ph6c"
               clip="rect(0 0 0 0)"
               disabled={false}
@@ -323,7 +323,7 @@ exports[`Storyshots CheckboxGroup Basic 1`] = `
                       >
                         <svg
                           aria-hidden={true}
-                          aria-labelledby="CheckboxCheckIcon-15"
+                          aria-labelledby="CheckboxCheckIcon-16"
                           height="100%"
                           role="img"
                           viewBox="0 0 20 20"
@@ -360,7 +360,7 @@ exports[`Storyshots CheckboxGroup Basic 1`] = `
             display="inline-flex"
           >
             <input
-              aria-describedby="16"
+              aria-describedby="17"
               className="css-l5ph6c"
               clip="rect(0 0 0 0)"
               disabled={false}
@@ -408,7 +408,7 @@ exports[`Storyshots CheckboxGroup Basic 1`] = `
                       >
                         <svg
                           aria-hidden={true}
-                          aria-labelledby="CheckboxCheckIcon-17"
+                          aria-labelledby="CheckboxCheckIcon-18"
                           height="100%"
                           role="img"
                           viewBox="0 0 20 20"
@@ -1179,6 +1179,211 @@ exports[`Storyshots Full Form Full Form 1`] = `
             </div>
           </div>
         </div>
+        <label
+          className="css-1o3qgb0"
+          display="block"
+          htmlFor="option_group_demo"
+        >
+          <span
+            className="css-ken708"
+            display="flex"
+          >
+            <span
+              className="css-12n8l5w"
+              cursor="pointer"
+              display="block"
+              height="4px"
+              width="4px"
+            >
+              <span
+                className="css-1cbdvo6"
+                clip="rect(0 0 0 0)"
+                height="1px"
+                overflow="hidden"
+                width="1px"
+              >
+                Required: 
+              </span>
+            </span>
+            <span
+              className="css-19tcioy"
+              color="colorText"
+              cursor="pointer"
+              fontSize="fontSize30"
+              fontWeight="fontWeightSemibold"
+            >
+              Product offering
+            </span>
+          </span>
+        </label>
+        <div
+          className="css-1kyjsrh"
+          cursor="text"
+          display="flex"
+          width="100%"
+        >
+          <div
+            className="css-1p04ivx"
+            display="flex"
+            width="100%"
+          >
+            <select
+              className="css-13zfrha"
+              color="inherit"
+              cursor="pointer"
+              data-not-selectize="true"
+              display="block"
+              fontFamily="inherit"
+              fontSize="fontSize30"
+              fontWeight="fontWeightNormal"
+              id="product"
+              name="product"
+              required={true}
+              size={0}
+              width="100%"
+            >
+              <optgroup
+                className="css-1jn1qfl"
+                color="inherit"
+                fontFamily="fontFamilyText"
+                fontStyle="normal"
+                fontWeight="fontWeightMedium"
+                label="SMS"
+              >
+                <option
+                  className="css-1keq5ad"
+                  color="inherit"
+                  fontFamily="fontFamilyText"
+                  value="geomatch"
+                >
+                  Area-code geomatch
+                </option>
+                <option
+                  className="css-1keq5ad"
+                  color="inherit"
+                  fontFamily="fontFamilyText"
+                  value="channels"
+                >
+                  Channels
+                </option>
+                <option
+                  className="css-1keq5ad"
+                  color="inherit"
+                  fontFamily="fontFamilyText"
+                  value="short-codes"
+                >
+                  Short codes
+                </option>
+              </optgroup>
+              <optgroup
+                className="css-1jn1qfl"
+                color="inherit"
+                fontFamily="fontFamilyText"
+                fontStyle="normal"
+                fontWeight="fontWeightMedium"
+                label="Voice"
+              >
+                <option
+                  className="css-1keq5ad"
+                  color="inherit"
+                  fontFamily="fontFamilyText"
+                  value="conference"
+                >
+                  Conference
+                </option>
+                <option
+                  className="css-1keq5ad"
+                  color="inherit"
+                  fontFamily="fontFamilyText"
+                  value="recording"
+                >
+                  Recordings
+                </option>
+                <option
+                  className="css-1keq5ad"
+                  color="inherit"
+                  fontFamily="fontFamilyText"
+                  value="tts"
+                >
+                  Text to Speech
+                </option>
+              </optgroup>
+              <optgroup
+                className="css-1jn1qfl"
+                color="inherit"
+                fontFamily="fontFamilyText"
+                fontStyle="normal"
+                fontWeight="fontWeightMedium"
+                label="Video"
+              >
+                <option
+                  className="css-1keq5ad"
+                  color="inherit"
+                  fontFamily="fontFamilyText"
+                  value="hipaa"
+                >
+                  HIPAA eligibility
+                </option>
+                <option
+                  className="css-1keq5ad"
+                  color="inherit"
+                  fontFamily="fontFamilyText"
+                  value="p2p"
+                >
+                  Peer to peer
+                </option>
+                <option
+                  className="css-1keq5ad"
+                  color="inherit"
+                  fontFamily="fontFamilyText"
+                  value="recordings"
+                >
+                  Recordings
+                </option>
+              </optgroup>
+            </select>
+            <div
+              className="css-o5gemw"
+              display="inline-flex"
+              pointerEvents="none"
+              transform="translateY(-50%)"
+            >
+              <span
+                className="css-1kzjb37"
+                color="colorTextIcon"
+                display="block"
+                size="sizeIcon30"
+              >
+                <svg
+                  aria-hidden={true}
+                  aria-labelledby="ChevronDownIcon-10"
+                  height="100%"
+                  role="img"
+                  viewBox="0 0 20 20"
+                  width="100%"
+                >
+                  <path
+                    d="M6.293 8.293a1 1 0 011.32-.083l.094.083L10 10.585l2.293-2.292a1 1 0 011.32-.083l.094.083a1 1 0 01.083 1.32l-.083.094-3 3a1 1 0 01-1.32.083l-.094-.083-3-3a1 1 0 010-1.414z"
+                    fill="currentColor"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-14qjmy2"
+          display="flex"
+        >
+          <div
+            className="css-8wof1k"
+            color="colorTextWeak"
+            fontSize="fontSize30"
+          >
+            Select a product to learn more.
+          </div>
+        </div>
         <button
           aria-busy="false"
           className="css-1kmjss9"
@@ -1250,7 +1455,7 @@ exports[`Storyshots Input Basic 1`] = `
     <label
       className="css-1o3qgb0"
       display="block"
-      htmlFor="callbackMethod"
+      htmlFor="emailAddress"
     >
       <span
         className="css-ken708"
@@ -1263,7 +1468,7 @@ exports[`Storyshots Input Basic 1`] = `
           fontSize="fontSize30"
           fontWeight="fontWeightSemibold"
         >
-          Callback Method
+          Email Address
         </span>
       </span>
     </label>
@@ -1353,7 +1558,7 @@ exports[`Storyshots RadioGroup Basic 1`] = `
             display="inline-flex"
           >
             <input
-              aria-describedby="18"
+              aria-describedby="19"
               aria-invalid={false}
               checked={false}
               className="css-l5ph6c"
@@ -1424,7 +1629,7 @@ exports[`Storyshots RadioGroup Basic 1`] = `
             display="inline-flex"
           >
             <input
-              aria-describedby="19"
+              aria-describedby="20"
               aria-invalid={false}
               checked={false}
               className="css-l5ph6c"
@@ -1608,7 +1813,7 @@ exports[`Storyshots Select Basic 1`] = `
           >
             <svg
               aria-hidden={true}
-              aria-labelledby="ChevronDownIcon-20"
+              aria-labelledby="ChevronDownIcon-21"
               height="100%"
               role="img"
               viewBox="0 0 20 20"
