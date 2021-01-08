@@ -60,33 +60,30 @@ export const Basic: React.FC = () => {
     </Theme.Provider>
   );
 };
-
 ```
 
 ## Differences between react-hook-form-paste and Paste
 
 react-hook-form-paste also provides TypeScript developers the option of typing their form inputs. Passing in an interface into a form input e.g. `<Input<ITestProps>>` will constrain the `name` field to only keys of that interface.
 
-
-
 ## Core Components
 
-|                    | Props                   | Props                                                                                                                   |
-| ------------------ | ---------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Checkbox           | { name, registerRef } & [CheckboxProps](https://paste.twilio.design/components/checkbox#checkbox-props)                          |
-| CheckboxDisclaimer           | { name, registerRef } & [CheckboxDisclaimerProps](https://paste.twilio.design/components/checkbox#checkboxdisclaimer-props)                          |
-| CheckboxGroup           | [CheckboxGroupProps](https://paste.twilio.design/components/checkbox#checkboxgroup-props)                          |
-| Input           | { name, registerRef } & [InputProps](https://paste.twilio.design/components/input#input-props)                          |
-| Option           | [OptionProps](https://paste.twilio.design/components/select#option-props)                          |
-| OptionGroup           | [OptionGroupProps](https://paste.twilio.design/components/select#optiongroup-props)                          |
-| Radio           | { name, registerRef } & [RadioProps](https://paste.twilio.design/components/radio-group#radio-props)                          |
-| RadioGroup           | { name, control } & [RadioGroupProps](https://paste.twilio.design/components/radio-group#radiogroup-props)                          |
-| Select           | { name, registerRef } & [SelectProps](https://paste.twilio.design/components/select#select-props)                          |
-| TextArea           | { name, control } & [TextAreaProps](https://paste.twilio.design/components/textarea#textarea-props)                          |
+|                    | Props                                                                                                                       |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| Checkbox           | { name, registerRef } & [CheckboxProps](https://paste.twilio.design/components/checkbox#checkbox-props)                     |
+| CheckboxDisclaimer | { name, registerRef } & [CheckboxDisclaimerProps](https://paste.twilio.design/components/checkbox#checkboxdisclaimer-props) |
+| CheckboxGroup      | [CheckboxGroupProps](https://paste.twilio.design/components/checkbox#checkboxgroup-props)                                   |
+| Input              | { name, registerRef } & [InputProps](https://paste.twilio.design/components/input#input-props)                              |
+| Option             | [OptionProps](https://paste.twilio.design/components/select#option-props)                                                   |
+| OptionGroup        | [OptionGroupProps](https://paste.twilio.design/components/select#optiongroup-props)                                         |
+| Radio              | { name, registerRef } & [RadioProps](https://paste.twilio.design/components/radio-group#radio-props)                        |
+| RadioGroup         | { name, control } & [RadioGroupProps](https://paste.twilio.design/components/radio-group#radiogroup-props)                  |
+| Select             | { name, registerRef } & [SelectProps](https://paste.twilio.design/components/select#select-props)                           |
+| TextArea           | { name, control } & [TextAreaProps](https://paste.twilio.design/components/textarea#textarea-props)                         |
 
-## Why `registerRef` over `ref` ?
+## Using `registerRef` over `ref`
 
-Currently, while using TypeScript there is incompatibility with `React.forwardRef` in that it does not allow the components to be generic with a forwarded ref. Because of this, we have to pass a ref into a HoC under a different name. This lets us pass refs and still be able to type the `name` fields
+Currently, while using TypeScript there is incompatibility with `React.forwardRef` in that it does not allow the components to be generic with a forwarded ref. Because of this, we have to pass a ref into a HoC under a different name than `ref`. This lets us pass refs and still be able to type the `name` fields.
 
 https://github.com/typescript-cheatsheets/react/issues/106#issuecomment-483342960
 https://reactjs.org/docs/refs-and-the-dom.html#exposing-dom-refs-to-parent-components
