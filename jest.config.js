@@ -1,10 +1,11 @@
 module.exports = {
   transform: {
-    '.(ts|tsx)': 'ts-jest',
+    '.(js|jsx)': 'babel-jest',
+    '.(ts|tsx)': 'babel-jest',
   },
   testPathIgnorePatterns: ['/node_modules/', '/lib/'],
-  testRegex: '(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$',
+  testRegex: '(/test/.*|\\.(test|spec))\\.(ts|tsx)$',
   collectCoverageFrom: ['src/**/*.(ts|tsx|js)', '!src/**/*.stories.(ts|tsx|js)'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
-  setupFilesAfterEnv: ['@testing-library/jest-dom'],
+  setupFilesAfterEnv: ['<rootDir>/testUtils.js'],
 };
