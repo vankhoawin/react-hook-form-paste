@@ -64,6 +64,7 @@ test('checks a checkbox and submits the form', async () => {
 });
 
 test('tests optional `onChange` event handlers', async () => {
+  // eslint-disable-next-line sonarjs/no-identical-functions
   const hookProps = renderHook(() =>
     useForm<ITestProps>({
       defaultValues: {
@@ -71,7 +72,7 @@ test('tests optional `onChange` event handlers', async () => {
       },
     }),
   );
-  const { handleSubmit } = hookProps.result.current;
+  const { handleSubmit, register } = hookProps.result.current;
   const onSubmitFormHandler = jest.fn();
   const onChangeInputHandler = jest.fn();
   const RADIO_TEST_ID = 'ongoing-test-id';
@@ -85,10 +86,16 @@ test('tests optional `onChange` event handlers', async () => {
           legend="When should your campaign run?"
           onChange={onChangeInputHandler}
         >
-          <Checkbox<ITestProps> name="campaign" value="ongoing" data-testid={RADIO_TEST_ID}>
+          <Checkbox<ITestProps>
+            id="ongoing"
+            name="campaign"
+            value="ongoing"
+            data-testid={RADIO_TEST_ID}
+            registerRef={register}
+          >
             Run my ads as ongoing
           </Checkbox>
-          <Checkbox<ITestProps> name="campaign" value="enddate">
+          <Checkbox<ITestProps> id="enddate" name="campaign" value="enddate" registerRef={register}>
             Set a start and end date
           </Checkbox>
         </CheckboxGroup>

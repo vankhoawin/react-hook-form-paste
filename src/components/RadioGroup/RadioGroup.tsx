@@ -1,17 +1,15 @@
 import * as React from 'react';
-import { Control, Controller } from 'react-hook-form';
+import { Control, Controller, FieldValues } from 'react-hook-form';
 import { RadioGroup as $RadioGroup, RadioGroupProps as $RadioGroupProps } from '@twilio-paste/core/radio-group';
 
-export type RadioGroupProps = Omit<$RadioGroupProps, 'value' | 'onChange'> &
+export type RadioGroupProps = Omit<$RadioGroupProps, 'value' | 'onChange' | 'ref'> &
   Partial<Pick<$RadioGroupProps, 'onChange'>>;
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function RadioGroup<TKeys extends Record<string, any>>(
-  props: Omit<$RadioGroupProps, 'ref' | 'onChange' | 'value'> &
-    Partial<Pick<$RadioGroupProps, 'onChange' | 'value'>> & {
-      control: Control;
-      name: keyof TKeys;
-    },
+export function RadioGroup<TKeys extends FieldValues>(
+  props: RadioGroupProps & {
+    control: Control;
+    name: keyof TKeys;
+  },
 ): React.ReactElement {
   const { children, control, name: inputName } = props;
 

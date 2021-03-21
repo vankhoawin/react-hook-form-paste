@@ -15,6 +15,7 @@ module.exports = {
   rules: {
     'react/jsx-pascal-case': 0,
     'import/no-unused-modules': 0,
+    '@typescript-eslint/ban-ts-comment': 0,
 
     // https://github.com/typescript-eslint/typescript-eslint/issues/2502#issuecomment-689595020
     'no-use-before-define': [0],
