@@ -65,6 +65,7 @@ test('types into the textarea and submits the form', async () => {
 });
 
 test('tests optional `onChange` and `onBlur` event handlers', async () => {
+  // eslint-disable-next-line sonarjs/no-identical-functions
   const hookProps = renderHook(() =>
     useForm<ITestProps>({
       defaultValues: {

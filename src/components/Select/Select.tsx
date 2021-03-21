@@ -8,12 +8,11 @@ export type SelectProps = Omit<$SelectProps, 'value' | 'onChange'> & Partial<Pic
 export function Select<TFormKeys extends FieldValues>(
   props: Omit<$SelectProps, 'ref' | 'onChange' | 'value'> &
     Partial<Pick<$SelectProps, 'onChange' | 'value'>> & {
-      registerRef: React.Ref<HTMLDivElement>;
+      registerRef: React.Ref<HTMLSelectElement>;
       name: keyof TFormKeys;
     },
 ): React.ReactElement {
   const { registerRef: ref, ...rest } = props;
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   return <$Select ref={ref} {...rest} />;
 }
