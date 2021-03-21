@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Control, Controller, FieldValues } from 'react-hook-form';
 import { TextArea as $TextArea, TextAreaProps as $TextAreaProps } from '@twilio-paste/core/textarea';
 

@@ -1,9 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
-import { Theme } from '@twilio-paste/core/theme';
 import { Button } from '@twilio-paste/core/button';
 import { Label } from '@twilio-paste/core/label';
-import * as React from 'react';
 import * as TestRenderer from 'react-test-renderer';
 import { useForm } from 'react-hook-form';
 
@@ -22,20 +20,18 @@ test('type into an input and submit the form', async () => {
   const onSubmitFormHandler = jest.fn();
 
   render(
-    <Theme.Provider theme="default">
-      <form onSubmit={handleSubmit(onSubmitFormHandler)}>
-        <Label htmlFor="callbackMethod">Callback Method</Label>
-        <Select<ITestProps> required id="callbackMethod" name="callbackMethod" registerRef={register}>
-          <Option value="get">GET</Option>
-          <Option value="post">POST</Option>
-          <Option value="put">PUT</Option>
-        </Select>
+    <form onSubmit={handleSubmit(onSubmitFormHandler)}>
+      <Label htmlFor="callbackMethod">Callback Method</Label>
+      <Select<ITestProps> required id="callbackMethod" name="callbackMethod" registerRef={register}>
+        <Option value="get">GET</Option>
+        <Option value="post">POST</Option>
+        <Option value="put">PUT</Option>
+      </Select>
 
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </form>
-    </Theme.Provider>,
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </form>,
   );
 
   const submitButton = screen.getByText(/Submit/);
@@ -59,28 +55,26 @@ test('tests optional `onChange` and `onBlur` event handlers', async () => {
   const onBlurFormHandler = jest.fn();
 
   render(
-    <Theme.Provider theme="default">
-      <form onSubmit={handleSubmit(onSubmitFormHandler)}>
-        <Label htmlFor="callbackMethod">Callback Method</Label>
-        <Select<ITestProps>
-          required
-          id="callbackMethod"
-          name="callbackMethod"
-          registerRef={register}
-          onChange={onChangeFormHandler}
-          onFocus={onFocusFormHandler}
-          onBlur={onBlurFormHandler}
-        >
-          <Option value="get">GET</Option>
-          <Option value="post">POST</Option>
-          <Option value="put">PUT</Option>
-        </Select>
+    <form onSubmit={handleSubmit(onSubmitFormHandler)}>
+      <Label htmlFor="callbackMethod">Callback Method</Label>
+      <Select<ITestProps>
+        required
+        id="callbackMethod"
+        name="callbackMethod"
+        registerRef={register}
+        onChange={onChangeFormHandler}
+        onFocus={onFocusFormHandler}
+        onBlur={onBlurFormHandler}
+      >
+        <Option value="get">GET</Option>
+        <Option value="post">POST</Option>
+        <Option value="put">PUT</Option>
+      </Select>
 
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </form>
-    </Theme.Provider>,
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </form>,
   );
 
   const getOption = screen.getByDisplayValue(/GET/);

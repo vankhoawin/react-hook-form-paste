@@ -1,9 +1,7 @@
-import { Theme } from '@twilio-paste/core/theme';
 import { Button } from '@twilio-paste/core/button';
 import { Label } from '@twilio-paste/core/label';
 import { Text } from '@twilio-paste/core/text';
 import { useForm } from 'react-hook-form';
-import * as React from 'react';
 
 import { TextArea } from './TextArea';
 
@@ -24,22 +22,20 @@ export const Basic: React.FC = () => {
   const message = watch('message');
 
   return (
-    <Theme.Provider theme="default">
-      <form
-        onSubmit={handleSubmit((payload) => {
-          window.alert(JSON.stringify(payload));
-        })}
-      >
-        <Label htmlFor="message" required={true}>
-          Message (at least 40 characters)
-        </Label>
-        <TextArea<ITestProps> id="message" name="message" placeholder="Enter message" control={control} />
-        <Text as="p">{message.length} characters</Text>
+    <form
+      onSubmit={handleSubmit((payload) => {
+        window.alert(JSON.stringify(payload));
+      })}
+    >
+      <Label htmlFor="message" required={true}>
+        Message (at least 40 characters)
+      </Label>
+      <TextArea<ITestProps> id="message" name="message" placeholder="Enter message" control={control} />
+      <Text as="p">{message.length} characters</Text>
 
-        <Button variant="primary" type="submit" disabled={message.length < 40}>
-          Submit
-        </Button>
-      </form>
-    </Theme.Provider>
+      <Button variant="primary" type="submit" disabled={message.length < 40}>
+        Submit
+      </Button>
+    </form>
   );
 };

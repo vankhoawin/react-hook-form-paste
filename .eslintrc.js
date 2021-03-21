@@ -14,6 +14,8 @@ module.exports = {
 
   rules: {
     'react/jsx-pascal-case': 0,
+    'react/jsx-uses-react': 0,
+    'react/react-in-jsx-scope': 0,
     'import/no-unused-modules': 0,
     '@typescript-eslint/ban-ts-comment': 0,
 

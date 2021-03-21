@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Input as $Input, InputProps as $InputProps } from '@twilio-paste/core/input';
 import { FieldValues } from 'react-hook-form';
 

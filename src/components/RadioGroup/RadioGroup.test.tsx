@@ -1,9 +1,7 @@
-import * as React from 'react';
 import * as TestRenderer from 'react-test-renderer';
 import { useForm } from 'react-hook-form';
 import { fireEvent, render } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
-import { Theme } from '@twilio-paste/core/theme';
 import { Button } from '@twilio-paste/core/button';
 
 import { Radio } from '../Radio';
@@ -29,22 +27,20 @@ test('types into an input and submits the form', async () => {
   const END_DATE_TEST_ID = 'enddate-test-id';
 
   const { getByTestId, getByText } = render(
-    <Theme.Provider theme="default">
-      <form onSubmit={handleSubmit(onSubmitFormHandler)}>
-        <RadioGroup<ITestProps> id="campaign" name="campaign" legend="When should your campaign run?" control={control}>
-          <Radio<ITestProps> id="ongoing" value="ongoing" name="campaign" data-testid={ONGOING_TEST_ID}>
-            Run my ads as ongoing
-          </Radio>
-          <Radio<ITestProps> id="enddate" value="enddate" name="campaign" data-testid={END_DATE_TEST_ID}>
-            Set a start and end date
-          </Radio>
-        </RadioGroup>
+    <form onSubmit={handleSubmit(onSubmitFormHandler)}>
+      <RadioGroup<ITestProps> id="campaign" name="campaign" legend="When should your campaign run?" control={control}>
+        <Radio<ITestProps> id="ongoing" value="ongoing" name="campaign" data-testid={ONGOING_TEST_ID}>
+          Run my ads as ongoing
+        </Radio>
+        <Radio<ITestProps> id="enddate" value="enddate" name="campaign" data-testid={END_DATE_TEST_ID}>
+          Set a start and end date
+        </Radio>
+      </RadioGroup>
 
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </form>
-    </Theme.Provider>,
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </form>,
   );
 
   const submitButton = getByText(/Submit/);
@@ -83,30 +79,28 @@ test('tests optional `onChange` event handlers', async () => {
   const RADIO_TEST_ID = 'ongoing-test-id';
 
   const { getByTestId } = render(
-    <Theme.Provider theme="default">
-      <form onSubmit={handleSubmit(onSubmitFormHandler)}>
-        <RadioGroup<ITestProps>
-          id="campaign"
-          name="campaign"
-          legend="When should your campaign run?"
-          control={control}
-          onChange={onChangeInputHandler}
-          onFocus={onFocusInputHandler}
-          onBlur={onBlurInputHandler}
-        >
-          <Radio<ITestProps> id="ongoing" value="ongoing" name="campaign" data-testid={RADIO_TEST_ID}>
-            Run my ads as ongoing
-          </Radio>
-          <Radio<ITestProps> id="enddate" value="enddate" name="campaign">
-            Set a start and end date
-          </Radio>
-        </RadioGroup>
+    <form onSubmit={handleSubmit(onSubmitFormHandler)}>
+      <RadioGroup<ITestProps>
+        id="campaign"
+        name="campaign"
+        legend="When should your campaign run?"
+        control={control}
+        onChange={onChangeInputHandler}
+        onFocus={onFocusInputHandler}
+        onBlur={onBlurInputHandler}
+      >
+        <Radio<ITestProps> id="ongoing" value="ongoing" name="campaign" data-testid={RADIO_TEST_ID}>
+          Run my ads as ongoing
+        </Radio>
+        <Radio<ITestProps> id="enddate" value="enddate" name="campaign">
+          Set a start and end date
+        </Radio>
+      </RadioGroup>
 
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </form>
-    </Theme.Provider>,
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </form>,
   );
 
   await act(async () => {
