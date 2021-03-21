@@ -1,6 +1,5 @@
 import { fireEvent, render } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
-import { Theme } from '@twilio-paste/core/theme';
 import { Button } from '@twilio-paste/core/button';
 import { Label } from '@twilio-paste/core/label';
 import * as React from 'react';
@@ -22,21 +21,19 @@ test('types into an input and submits the form', async () => {
   const emailAddress = 'vanguyen@twilio.com';
 
   const { getByLabelText, getByText } = render(
-    <Theme.Provider theme="default">
-      <form onSubmit={handleSubmit(onSubmitFormHandler)}>
-        <Label htmlFor="emailAddress">Email Address</Label>
-        <Input<ITestProps>
-          id="emailAddress"
-          name="emailAddress"
-          type="email"
-          placeholder="example@twilio.com"
-          registerRef={register}
-        />
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </form>
-    </Theme.Provider>,
+    <form onSubmit={handleSubmit(onSubmitFormHandler)}>
+      <Label htmlFor="emailAddress">Email Address</Label>
+      <Input<ITestProps>
+        id="emailAddress"
+        name="emailAddress"
+        type="email"
+        placeholder="example@twilio.com"
+        registerRef={register}
+      />
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </form>,
   );
 
   const input = getByLabelText(/Email Address/);
@@ -62,23 +59,21 @@ test("tests `onSubmit`, `onChange` and `onBlur` event handlers'", async () => {
   const emailAddress = 'vanguyen@twilio.com';
 
   const { getByLabelText, getByText } = render(
-    <Theme.Provider theme="default">
-      <form onSubmit={handleSubmit(onSubmitFormHandler)}>
-        <Label htmlFor="emailAddress">Email Address</Label>
-        <Input<ITestProps>
-          id="emailAddress"
-          name="emailAddress"
-          type="email"
-          placeholder="example@twilio.com"
-          registerRef={register}
-          onChange={onChangeInputHandler}
-          onBlur={onBlurInputHandler}
-        />
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </form>
-    </Theme.Provider>,
+    <form onSubmit={handleSubmit(onSubmitFormHandler)}>
+      <Label htmlFor="emailAddress">Email Address</Label>
+      <Input<ITestProps>
+        id="emailAddress"
+        name="emailAddress"
+        type="email"
+        placeholder="example@twilio.com"
+        registerRef={register}
+        onChange={onChangeInputHandler}
+        onBlur={onBlurInputHandler}
+      />
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </form>,
   );
 
   const input = getByLabelText(/Email Address/);
