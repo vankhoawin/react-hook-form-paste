@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { FieldValues } from 'react-hook-form';
 import { Select as $Select, SelectProps as $SelectProps } from '@twilio-paste/core/select';
 

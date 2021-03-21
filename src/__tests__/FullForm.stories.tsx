@@ -8,7 +8,6 @@ import { Column, Grid } from '@twilio-paste/core/grid';
 import { Heading } from '@twilio-paste/core/heading';
 import { Card } from '@twilio-paste/core/card';
 import { Stack } from '@twilio-paste/core/stack';
-import * as React from 'react';
 import { Control, useForm, useWatch } from 'react-hook-form';
 
 import {

@@ -1,5 +1,4 @@
 import { Button } from '@twilio-paste/core/button';
-import * as React from 'react';
 import { useForm } from 'react-hook-form';
 
 import { Radio } from '../Radio';

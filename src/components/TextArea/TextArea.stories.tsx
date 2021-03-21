@@ -2,7 +2,6 @@ import { Button } from '@twilio-paste/core/button';
 import { Label } from '@twilio-paste/core/label';
 import { Text } from '@twilio-paste/core/text';
 import { useForm } from 'react-hook-form';
-import * as React from 'react';
 
 import { TextArea } from './TextArea';
 

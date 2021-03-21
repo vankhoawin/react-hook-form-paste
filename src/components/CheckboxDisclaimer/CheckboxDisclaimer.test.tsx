@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useForm } from 'react-hook-form';
 import * as TestRenderer from 'react-test-renderer';
 import { fireEvent, render } from '@testing-library/react';

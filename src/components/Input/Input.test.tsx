@@ -2,7 +2,6 @@ import { fireEvent, render } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
 import { Button } from '@twilio-paste/core/button';
 import { Label } from '@twilio-paste/core/label';
-import * as React from 'react';
 import * as TestRenderer from 'react-test-renderer';
 import { useForm } from 'react-hook-form';
 

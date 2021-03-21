@@ -1,4 +1,3 @@
-import * as React from 'react';
 import {
   CheckboxGroup as $CheckboxGroup,
   CheckboxGroupProps as $CheckboxGroupProps,

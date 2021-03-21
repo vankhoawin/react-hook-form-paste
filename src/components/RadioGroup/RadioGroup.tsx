@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Control, Controller, FieldValues } from 'react-hook-form';
 import { RadioGroup as $RadioGroup, RadioGroupProps as $RadioGroupProps } from '@twilio-paste/core/radio-group';
 

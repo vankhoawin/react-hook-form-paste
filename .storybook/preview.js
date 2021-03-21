@@ -1,5 +1,4 @@
 import { Theme } from '@twilio-paste/core/theme';
-import React from 'react';
 
 function withPasteThemeProvider(Story) {
   return (
