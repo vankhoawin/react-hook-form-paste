@@ -29,57 +29,70 @@ exports[`Storyshots Checkbox Basic 1`] = `
         htmlFor="id"
       >
         <span
-          className="css-ken708"
+          className="css-7f8gq7"
           display="flex"
         >
           <span
-            className="css-19tcioy"
-            color="colorText"
-            cursor="pointer"
-            fontSize="fontSize30"
-            fontWeight="fontWeightSemibold"
+            className="css-1i39mnm"
           >
             <span
-              className="css-sncxrr"
-              display="flex"
+              className="css-19tcioy"
+              color="colorText"
+              cursor="pointer"
+              fontSize="fontSize30"
+              fontWeight="fontWeightSemibold"
             >
               <span
-                aria-hidden="true"
-                className="css-1qnp08n"
+                className="css-sncxrr"
                 display="flex"
-                height="sizeSquare50"
-                type="checkbox"
-                width="sizeSquare50"
               >
                 <span
-                  className="css-1ls7lvh"
-                  color="colorTextInverse"
-                  display="block"
-                  size="sizeIcon10"
+                  aria-hidden="true"
+                  className="css-1qnp08n"
+                  display="flex"
+                  height="sizeSquare50"
+                  type="checkbox"
+                  width="sizeSquare50"
                 >
-                  <svg
-                    aria-hidden={true}
-                    aria-labelledby="CheckboxCheckIcon-13"
-                    height="100%"
-                    role="img"
-                    viewBox="0 0 20 20"
-                    width="100%"
+                  <span
+                    className="css-1ls7lvh"
+                    color="colorTextInverse"
+                    display="block"
+                    size="sizeIcon10"
                   >
-                    <path
-                      d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
-                      fill="currentColor"
-                      fillRule="evenodd"
-                    />
-                  </svg>
+                    <svg
+                      aria-hidden={true}
+                      aria-labelledby="CheckboxCheckIcon-13"
+                      height="100%"
+                      role="img"
+                      viewBox="0 0 20 20"
+                      width="100%"
+                    >
+                      <path
+                        d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
+                        fill="currentColor"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </span>
                 </span>
-              </span>
-              <span
-                className="css-pmq22s"
-                color="currentColor"
-                fontSize="fontSize30"
-                fontWeight="fontWeightNormal"
-              >
-                I declare the information provided above is accurate. I acknowledge that Twilio will process the information provided above for the purpose of identity verification, and will be sharing it with my local telecomm providers or authorities where required by local law. I understand that Twilio phone numbers may be taken out of service for inaccurate or false information.
+                <span
+                  className="css-pmq22s"
+                  color="currentColor"
+                  fontSize="fontSize30"
+                  fontWeight="fontWeightNormal"
+                >
+                  <span
+                    className="css-7f8gq7"
+                    display="flex"
+                  >
+                    <span
+                      className="css-1i39mnm"
+                    >
+                      I declare the information provided above is accurate. I acknowledge that Twilio will process the information provided above for the purpose of identity verification, and will be sharing it with my local telecomm providers or authorities where required by local law. I understand that Twilio phone numbers may be taken out of service for inaccurate or false information.
+                    </span>
+                  </span>
+                </span>
               </span>
             </span>
           </span>
@@ -147,57 +160,70 @@ exports[`Storyshots CheckboxDisclaimer Basic 1`] = `
           htmlFor="id"
         >
           <span
-            className="css-ken708"
+            className="css-7f8gq7"
             display="flex"
           >
             <span
-              className="css-19tcioy"
-              color="colorText"
-              cursor="pointer"
-              fontSize="fontSize30"
-              fontWeight="fontWeightSemibold"
+              className="css-1i39mnm"
             >
               <span
-                className="css-sncxrr"
-                display="flex"
+                className="css-19tcioy"
+                color="colorText"
+                cursor="pointer"
+                fontSize="fontSize30"
+                fontWeight="fontWeightSemibold"
               >
                 <span
-                  aria-hidden="true"
-                  className="css-1qnp08n"
+                  className="css-sncxrr"
                   display="flex"
-                  height="sizeSquare50"
-                  type="checkbox"
-                  width="sizeSquare50"
                 >
                   <span
-                    className="css-1ls7lvh"
-                    color="colorTextInverse"
-                    display="block"
-                    size="sizeIcon10"
+                    aria-hidden="true"
+                    className="css-1qnp08n"
+                    display="flex"
+                    height="sizeSquare50"
+                    type="checkbox"
+                    width="sizeSquare50"
                   >
-                    <svg
-                      aria-hidden={true}
-                      aria-labelledby="CheckboxCheckIcon-15"
-                      height="100%"
-                      role="img"
-                      viewBox="0 0 20 20"
-                      width="100%"
+                    <span
+                      className="css-1ls7lvh"
+                      color="colorTextInverse"
+                      display="block"
+                      size="sizeIcon10"
                     >
-                      <path
-                        d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
-                        fill="currentColor"
-                        fillRule="evenodd"
-                      />
-                    </svg>
+                      <svg
+                        aria-hidden={true}
+                        aria-labelledby="CheckboxCheckIcon-15"
+                        height="100%"
+                        role="img"
+                        viewBox="0 0 20 20"
+                        width="100%"
+                      >
+                        <path
+                          d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </span>
                   </span>
-                </span>
-                <span
-                  className="css-pmq22s"
-                  color="currentColor"
-                  fontSize="fontSize30"
-                  fontWeight="fontWeightNormal"
-                >
-                  I declare the information provided above is accurate. I acknowledge that Twilio will process the information provided above for the purpose of identity verification, and will be sharing it with my local telecomm providers or authorities where required by local law. I understand that Twilio phone numbers may be taken out of service for inaccurate or false information.
+                  <span
+                    className="css-pmq22s"
+                    color="currentColor"
+                    fontSize="fontSize30"
+                    fontWeight="fontWeightNormal"
+                  >
+                    <span
+                      className="css-7f8gq7"
+                      display="flex"
+                    >
+                      <span
+                        className="css-1i39mnm"
+                      >
+                        I declare the information provided above is accurate. I acknowledge that Twilio will process the information provided above for the purpose of identity verification, and will be sharing it with my local telecomm providers or authorities where required by local law. I understand that Twilio phone numbers may be taken out of service for inaccurate or false information.
+                      </span>
+                    </span>
+                  </span>
                 </span>
               </span>
             </span>
@@ -249,17 +275,21 @@ exports[`Storyshots CheckboxGroup Basic 1`] = `
         display="block"
       >
         <span
-          className="css-ken708"
+          className="css-7f8gq7"
           display="flex"
         >
           <span
-            className="css-19tcioy"
-            color="colorText"
-            cursor="pointer"
-            fontSize="fontSize30"
-            fontWeight="fontWeightSemibold"
+            className="css-1i39mnm"
           >
-            When should your campaign run?
+            <span
+              className="css-19tcioy"
+              color="colorText"
+              cursor="pointer"
+              fontSize="fontSize30"
+              fontWeight="fontWeightSemibold"
+            >
+              When should your campaign run?
+            </span>
           </span>
         </span>
       </legend>
@@ -293,57 +323,70 @@ exports[`Storyshots CheckboxGroup Basic 1`] = `
               htmlFor="ongoing"
             >
               <span
-                className="css-ken708"
+                className="css-7f8gq7"
                 display="flex"
               >
                 <span
-                  className="css-19tcioy"
-                  color="colorText"
-                  cursor="pointer"
-                  fontSize="fontSize30"
-                  fontWeight="fontWeightSemibold"
+                  className="css-1i39mnm"
                 >
                   <span
-                    className="css-sncxrr"
-                    display="flex"
+                    className="css-19tcioy"
+                    color="colorText"
+                    cursor="pointer"
+                    fontSize="fontSize30"
+                    fontWeight="fontWeightSemibold"
                   >
                     <span
-                      aria-hidden="true"
-                      className="css-1qnp08n"
+                      className="css-sncxrr"
                       display="flex"
-                      height="sizeSquare50"
-                      type="checkbox"
-                      width="sizeSquare50"
                     >
                       <span
-                        className="css-1ls7lvh"
-                        color="colorTextInverse"
-                        display="block"
-                        size="sizeIcon10"
+                        aria-hidden="true"
+                        className="css-1qnp08n"
+                        display="flex"
+                        height="sizeSquare50"
+                        type="checkbox"
+                        width="sizeSquare50"
                       >
-                        <svg
-                          aria-hidden={true}
-                          aria-labelledby="CheckboxCheckIcon-17"
-                          height="100%"
-                          role="img"
-                          viewBox="0 0 20 20"
-                          width="100%"
+                        <span
+                          className="css-1ls7lvh"
+                          color="colorTextInverse"
+                          display="block"
+                          size="sizeIcon10"
                         >
-                          <path
-                            d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
-                            fill="currentColor"
-                            fillRule="evenodd"
-                          />
-                        </svg>
+                          <svg
+                            aria-hidden={true}
+                            aria-labelledby="CheckboxCheckIcon-17"
+                            height="100%"
+                            role="img"
+                            viewBox="0 0 20 20"
+                            width="100%"
+                          >
+                            <path
+                              d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
+                              fill="currentColor"
+                              fillRule="evenodd"
+                            />
+                          </svg>
+                        </span>
                       </span>
-                    </span>
-                    <span
-                      className="css-pmq22s"
-                      color="currentColor"
-                      fontSize="fontSize30"
-                      fontWeight="fontWeightNormal"
-                    >
-                      Run my ads as ongoing
+                      <span
+                        className="css-pmq22s"
+                        color="currentColor"
+                        fontSize="fontSize30"
+                        fontWeight="fontWeightNormal"
+                      >
+                        <span
+                          className="css-7f8gq7"
+                          display="flex"
+                        >
+                          <span
+                            className="css-1i39mnm"
+                          >
+                            Run my ads as ongoing
+                          </span>
+                        </span>
+                      </span>
                     </span>
                   </span>
                 </span>
@@ -378,57 +421,70 @@ exports[`Storyshots CheckboxGroup Basic 1`] = `
               htmlFor="enddate"
             >
               <span
-                className="css-ken708"
+                className="css-7f8gq7"
                 display="flex"
               >
                 <span
-                  className="css-19tcioy"
-                  color="colorText"
-                  cursor="pointer"
-                  fontSize="fontSize30"
-                  fontWeight="fontWeightSemibold"
+                  className="css-1i39mnm"
                 >
                   <span
-                    className="css-sncxrr"
-                    display="flex"
+                    className="css-19tcioy"
+                    color="colorText"
+                    cursor="pointer"
+                    fontSize="fontSize30"
+                    fontWeight="fontWeightSemibold"
                   >
                     <span
-                      aria-hidden="true"
-                      className="css-1qnp08n"
+                      className="css-sncxrr"
                       display="flex"
-                      height="sizeSquare50"
-                      type="checkbox"
-                      width="sizeSquare50"
                     >
                       <span
-                        className="css-1ls7lvh"
-                        color="colorTextInverse"
-                        display="block"
-                        size="sizeIcon10"
+                        aria-hidden="true"
+                        className="css-1qnp08n"
+                        display="flex"
+                        height="sizeSquare50"
+                        type="checkbox"
+                        width="sizeSquare50"
                       >
-                        <svg
-                          aria-hidden={true}
-                          aria-labelledby="CheckboxCheckIcon-19"
-                          height="100%"
-                          role="img"
-                          viewBox="0 0 20 20"
-                          width="100%"
+                        <span
+                          className="css-1ls7lvh"
+                          color="colorTextInverse"
+                          display="block"
+                          size="sizeIcon10"
                         >
-                          <path
-                            d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
-                            fill="currentColor"
-                            fillRule="evenodd"
-                          />
-                        </svg>
+                          <svg
+                            aria-hidden={true}
+                            aria-labelledby="CheckboxCheckIcon-19"
+                            height="100%"
+                            role="img"
+                            viewBox="0 0 20 20"
+                            width="100%"
+                          >
+                            <path
+                              d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
+                              fill="currentColor"
+                              fillRule="evenodd"
+                            />
+                          </svg>
+                        </span>
                       </span>
-                    </span>
-                    <span
-                      className="css-pmq22s"
-                      color="currentColor"
-                      fontSize="fontSize30"
-                      fontWeight="fontWeightNormal"
-                    >
-                      Set a start and end date
+                      <span
+                        className="css-pmq22s"
+                        color="currentColor"
+                        fontSize="fontSize30"
+                        fontWeight="fontWeightNormal"
+                      >
+                        <span
+                          className="css-7f8gq7"
+                          display="flex"
+                        >
+                          <span
+                            className="css-1i39mnm"
+                          >
+                            Set a start and end date
+                          </span>
+                        </span>
+                      </span>
                     </span>
                   </span>
                 </span>
@@ -506,17 +562,21 @@ exports[`Storyshots Full Form Full Form 1`] = `
                 htmlFor="emailAddress"
               >
                 <span
-                  className="css-ken708"
+                  className="css-7f8gq7"
                   display="flex"
                 >
                   <span
-                    className="css-19tcioy"
-                    color="colorText"
-                    cursor="pointer"
-                    fontSize="fontSize30"
-                    fontWeight="fontWeightSemibold"
+                    className="css-1i39mnm"
                   >
-                    Email Address
+                    <span
+                      className="css-19tcioy"
+                      color="colorText"
+                      cursor="pointer"
+                      fontSize="fontSize30"
+                      fontWeight="fontWeightSemibold"
+                    >
+                      Email Address
+                    </span>
                   </span>
                 </span>
               </label>
@@ -548,17 +608,21 @@ exports[`Storyshots Full Form Full Form 1`] = `
                 htmlFor="positiveNumber"
               >
                 <span
-                  className="css-ken708"
+                  className="css-7f8gq7"
                   display="flex"
                 >
                   <span
-                    className="css-19tcioy"
-                    color="colorText"
-                    cursor="pointer"
-                    fontSize="fontSize30"
-                    fontWeight="fontWeightSemibold"
+                    className="css-1i39mnm"
                   >
-                    Positive Number
+                    <span
+                      className="css-19tcioy"
+                      color="colorText"
+                      cursor="pointer"
+                      fontSize="fontSize30"
+                      fontWeight="fontWeightSemibold"
+                    >
+                      Positive Number
+                    </span>
                   </span>
                 </span>
               </label>
@@ -592,34 +656,49 @@ exports[`Storyshots Full Form Full Form 1`] = `
                 htmlFor="message"
               >
                 <span
-                  className="css-ken708"
+                  className="css-7f8gq7"
                   display="flex"
                 >
                   <span
-                    className="css-12n8l5w"
-                    cursor="pointer"
-                    display="block"
-                    height="4px"
-                    width="4px"
+                    className="css-1n9kqxc"
+                    display="flex"
                   >
                     <span
-                      className="css-1cbdvo6"
-                      clip="rect(0 0 0 0)"
-                      height="1px"
-                      overflow="hidden"
-                      width="1px"
+                      className="css-18fj8c6"
+                      cursor="pointer"
+                      display="flex"
+                      height="sizeIcon30"
                     >
-                      Required: 
+                      <span
+                        className="css-17qcbxe"
+                        display="block"
+                        height="4px"
+                        width="4px"
+                      >
+                        <span
+                          className="css-1cbdvo6"
+                          clip="rect(0 0 0 0)"
+                          height="1px"
+                          overflow="hidden"
+                          width="1px"
+                        >
+                          Required: 
+                        </span>
+                      </span>
                     </span>
                   </span>
                   <span
-                    className="css-19tcioy"
-                    color="colorText"
-                    cursor="pointer"
-                    fontSize="fontSize30"
-                    fontWeight="fontWeightSemibold"
+                    className="css-1i39mnm"
                   >
-                    Message (at least 40 characters)
+                    <span
+                      className="css-19tcioy"
+                      color="colorText"
+                      cursor="pointer"
+                      fontSize="fontSize30"
+                      fontWeight="fontWeightSemibold"
+                    >
+                      Message (at least 40 characters)
+                    </span>
                   </span>
                 </span>
               </label>
@@ -664,17 +743,21 @@ exports[`Storyshots Full Form Full Form 1`] = `
                 display="block"
               >
                 <span
-                  className="css-ken708"
+                  className="css-7f8gq7"
                   display="flex"
                 >
                   <span
-                    className="css-19tcioy"
-                    color="colorText"
-                    cursor="pointer"
-                    fontSize="fontSize30"
-                    fontWeight="fontWeightSemibold"
+                    className="css-1i39mnm"
                   >
-                    Fruits
+                    <span
+                      className="css-19tcioy"
+                      color="colorText"
+                      cursor="pointer"
+                      fontSize="fontSize30"
+                      fontWeight="fontWeightSemibold"
+                    >
+                      Fruits
+                    </span>
                   </span>
                 </span>
               </legend>
@@ -708,57 +791,70 @@ exports[`Storyshots Full Form Full Form 1`] = `
                       htmlFor="apples"
                     >
                       <span
-                        className="css-ken708"
+                        className="css-7f8gq7"
                         display="flex"
                       >
                         <span
-                          className="css-19tcioy"
-                          color="colorText"
-                          cursor="pointer"
-                          fontSize="fontSize30"
-                          fontWeight="fontWeightSemibold"
+                          className="css-1i39mnm"
                         >
                           <span
-                            className="css-sncxrr"
-                            display="flex"
+                            className="css-19tcioy"
+                            color="colorText"
+                            cursor="pointer"
+                            fontSize="fontSize30"
+                            fontWeight="fontWeightSemibold"
                           >
                             <span
-                              aria-hidden="true"
-                              className="css-1qnp08n"
+                              className="css-sncxrr"
                               display="flex"
-                              height="sizeSquare50"
-                              type="checkbox"
-                              width="sizeSquare50"
                             >
                               <span
-                                className="css-1ls7lvh"
-                                color="colorTextInverse"
-                                display="block"
-                                size="sizeIcon10"
+                                aria-hidden="true"
+                                className="css-1qnp08n"
+                                display="flex"
+                                height="sizeSquare50"
+                                type="checkbox"
+                                width="sizeSquare50"
                               >
-                                <svg
-                                  aria-hidden={true}
-                                  aria-labelledby="CheckboxCheckIcon-3"
-                                  height="100%"
-                                  role="img"
-                                  viewBox="0 0 20 20"
-                                  width="100%"
+                                <span
+                                  className="css-1ls7lvh"
+                                  color="colorTextInverse"
+                                  display="block"
+                                  size="sizeIcon10"
                                 >
-                                  <path
-                                    d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
-                                    fill="currentColor"
-                                    fillRule="evenodd"
-                                  />
-                                </svg>
+                                  <svg
+                                    aria-hidden={true}
+                                    aria-labelledby="CheckboxCheckIcon-3"
+                                    height="100%"
+                                    role="img"
+                                    viewBox="0 0 20 20"
+                                    width="100%"
+                                  >
+                                    <path
+                                      d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
+                                      fill="currentColor"
+                                      fillRule="evenodd"
+                                    />
+                                  </svg>
+                                </span>
                               </span>
-                            </span>
-                            <span
-                              className="css-pmq22s"
-                              color="currentColor"
-                              fontSize="fontSize30"
-                              fontWeight="fontWeightNormal"
-                            >
-                              Apples
+                              <span
+                                className="css-pmq22s"
+                                color="currentColor"
+                                fontSize="fontSize30"
+                                fontWeight="fontWeightNormal"
+                              >
+                                <span
+                                  className="css-7f8gq7"
+                                  display="flex"
+                                >
+                                  <span
+                                    className="css-1i39mnm"
+                                  >
+                                    Apples
+                                  </span>
+                                </span>
+                              </span>
                             </span>
                           </span>
                         </span>
@@ -793,57 +889,70 @@ exports[`Storyshots Full Form Full Form 1`] = `
                       htmlFor="oranges"
                     >
                       <span
-                        className="css-ken708"
+                        className="css-7f8gq7"
                         display="flex"
                       >
                         <span
-                          className="css-19tcioy"
-                          color="colorText"
-                          cursor="pointer"
-                          fontSize="fontSize30"
-                          fontWeight="fontWeightSemibold"
+                          className="css-1i39mnm"
                         >
                           <span
-                            className="css-sncxrr"
-                            display="flex"
+                            className="css-19tcioy"
+                            color="colorText"
+                            cursor="pointer"
+                            fontSize="fontSize30"
+                            fontWeight="fontWeightSemibold"
                           >
                             <span
-                              aria-hidden="true"
-                              className="css-1qnp08n"
+                              className="css-sncxrr"
                               display="flex"
-                              height="sizeSquare50"
-                              type="checkbox"
-                              width="sizeSquare50"
                             >
                               <span
-                                className="css-1ls7lvh"
-                                color="colorTextInverse"
-                                display="block"
-                                size="sizeIcon10"
+                                aria-hidden="true"
+                                className="css-1qnp08n"
+                                display="flex"
+                                height="sizeSquare50"
+                                type="checkbox"
+                                width="sizeSquare50"
                               >
-                                <svg
-                                  aria-hidden={true}
-                                  aria-labelledby="CheckboxCheckIcon-5"
-                                  height="100%"
-                                  role="img"
-                                  viewBox="0 0 20 20"
-                                  width="100%"
+                                <span
+                                  className="css-1ls7lvh"
+                                  color="colorTextInverse"
+                                  display="block"
+                                  size="sizeIcon10"
                                 >
-                                  <path
-                                    d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
-                                    fill="currentColor"
-                                    fillRule="evenodd"
-                                  />
-                                </svg>
+                                  <svg
+                                    aria-hidden={true}
+                                    aria-labelledby="CheckboxCheckIcon-5"
+                                    height="100%"
+                                    role="img"
+                                    viewBox="0 0 20 20"
+                                    width="100%"
+                                  >
+                                    <path
+                                      d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
+                                      fill="currentColor"
+                                      fillRule="evenodd"
+                                    />
+                                  </svg>
+                                </span>
                               </span>
-                            </span>
-                            <span
-                              className="css-pmq22s"
-                              color="currentColor"
-                              fontSize="fontSize30"
-                              fontWeight="fontWeightNormal"
-                            >
-                              Oranges
+                              <span
+                                className="css-pmq22s"
+                                color="currentColor"
+                                fontSize="fontSize30"
+                                fontWeight="fontWeightNormal"
+                              >
+                                <span
+                                  className="css-7f8gq7"
+                                  display="flex"
+                                >
+                                  <span
+                                    className="css-1i39mnm"
+                                  >
+                                    Oranges
+                                  </span>
+                                </span>
+                              </span>
                             </span>
                           </span>
                         </span>
@@ -883,57 +992,70 @@ exports[`Storyshots Full Form Full Form 1`] = `
                   htmlFor="disclaimer"
                 >
                   <span
-                    className="css-ken708"
+                    className="css-7f8gq7"
                     display="flex"
                   >
                     <span
-                      className="css-19tcioy"
-                      color="colorText"
-                      cursor="pointer"
-                      fontSize="fontSize30"
-                      fontWeight="fontWeightSemibold"
+                      className="css-1i39mnm"
                     >
                       <span
-                        className="css-sncxrr"
-                        display="flex"
+                        className="css-19tcioy"
+                        color="colorText"
+                        cursor="pointer"
+                        fontSize="fontSize30"
+                        fontWeight="fontWeightSemibold"
                       >
                         <span
-                          aria-hidden="true"
-                          className="css-1qnp08n"
+                          className="css-sncxrr"
                           display="flex"
-                          height="sizeSquare50"
-                          type="checkbox"
-                          width="sizeSquare50"
                         >
                           <span
-                            className="css-1ls7lvh"
-                            color="colorTextInverse"
-                            display="block"
-                            size="sizeIcon10"
+                            aria-hidden="true"
+                            className="css-1qnp08n"
+                            display="flex"
+                            height="sizeSquare50"
+                            type="checkbox"
+                            width="sizeSquare50"
                           >
-                            <svg
-                              aria-hidden={true}
-                              aria-labelledby="CheckboxCheckIcon-7"
-                              height="100%"
-                              role="img"
-                              viewBox="0 0 20 20"
-                              width="100%"
+                            <span
+                              className="css-1ls7lvh"
+                              color="colorTextInverse"
+                              display="block"
+                              size="sizeIcon10"
                             >
-                              <path
-                                d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
-                                fill="currentColor"
-                                fillRule="evenodd"
-                              />
-                            </svg>
+                              <svg
+                                aria-hidden={true}
+                                aria-labelledby="CheckboxCheckIcon-7"
+                                height="100%"
+                                role="img"
+                                viewBox="0 0 20 20"
+                                width="100%"
+                              >
+                                <path
+                                  d="M15.59 5.916a1.386 1.386 0 00-1.98 0l-5.04 5.138L6.39 8.83a1.38 1.38 0 00-1.98 0 1.448 1.448 0 000 2.018l3.171 3.233a1.382 1.382 0 001.98 0l6.03-6.148a1.448 1.448 0 000-2.018z"
+                                  fill="currentColor"
+                                  fillRule="evenodd"
+                                />
+                              </svg>
+                            </span>
                           </span>
-                        </span>
-                        <span
-                          className="css-pmq22s"
-                          color="currentColor"
-                          fontSize="fontSize30"
-                          fontWeight="fontWeightNormal"
-                        >
-                          By agreeing to this you accept the Terms and Conditions.
+                          <span
+                            className="css-pmq22s"
+                            color="currentColor"
+                            fontSize="fontSize30"
+                            fontWeight="fontWeightNormal"
+                          >
+                            <span
+                              className="css-7f8gq7"
+                              display="flex"
+                            >
+                              <span
+                                className="css-1i39mnm"
+                              >
+                                By agreeing to this you accept the Terms and Conditions.
+                              </span>
+                            </span>
+                          </span>
                         </span>
                       </span>
                     </span>
@@ -956,17 +1078,21 @@ exports[`Storyshots Full Form Full Form 1`] = `
                 display="block"
               >
                 <span
-                  className="css-ken708"
+                  className="css-7f8gq7"
                   display="flex"
                 >
                   <span
-                    className="css-19tcioy"
-                    color="colorText"
-                    cursor="pointer"
-                    fontSize="fontSize30"
-                    fontWeight="fontWeightSemibold"
+                    className="css-1i39mnm"
                   >
-                    When should your campaign run?
+                    <span
+                      className="css-19tcioy"
+                      color="colorText"
+                      cursor="pointer"
+                      fontSize="fontSize30"
+                      fontWeight="fontWeightSemibold"
+                    >
+                      When should your campaign run?
+                    </span>
                   </span>
                 </span>
               </legend>
@@ -1002,41 +1128,45 @@ exports[`Storyshots Full Form Full Form 1`] = `
                       htmlFor="ongoing"
                     >
                       <span
-                        className="css-ken708"
+                        className="css-7f8gq7"
                         display="flex"
                       >
                         <span
-                          className="css-19tcioy"
-                          color="colorText"
-                          cursor="pointer"
-                          fontSize="fontSize30"
-                          fontWeight="fontWeightSemibold"
+                          className="css-1i39mnm"
                         >
                           <span
-                            className="css-sncxrr"
-                            display="flex"
+                            className="css-19tcioy"
+                            color="colorText"
+                            cursor="pointer"
+                            fontSize="fontSize30"
+                            fontWeight="fontWeightSemibold"
                           >
                             <span
-                              aria-hidden="true"
-                              className="css-j6zn3d"
+                              className="css-sncxrr"
                               display="flex"
-                              height="sizeSquare50"
-                              type="radio"
-                              width="sizeSquare50"
                             >
                               <span
-                                className="css-4g659b"
-                                height="sizeSquare25"
-                                width="sizeSquare25"
-                              />
-                            </span>
-                            <span
-                              className="css-pmq22s"
-                              color="currentColor"
-                              fontSize="fontSize30"
-                              fontWeight="fontWeightNormal"
-                            >
-                              Run my ads as ongoing
+                                aria-hidden="true"
+                                className="css-j6zn3d"
+                                display="flex"
+                                height="sizeSquare50"
+                                type="radio"
+                                width="sizeSquare50"
+                              >
+                                <span
+                                  className="css-4g659b"
+                                  height="sizeSquare25"
+                                  width="sizeSquare25"
+                                />
+                              </span>
+                              <span
+                                className="css-pmq22s"
+                                color="currentColor"
+                                fontSize="fontSize30"
+                                fontWeight="fontWeightNormal"
+                              >
+                                Run my ads as ongoing
+                              </span>
                             </span>
                           </span>
                         </span>
@@ -1073,41 +1203,45 @@ exports[`Storyshots Full Form Full Form 1`] = `
                       htmlFor="enddate"
                     >
                       <span
-                        className="css-ken708"
+                        className="css-7f8gq7"
                         display="flex"
                       >
                         <span
-                          className="css-19tcioy"
-                          color="colorText"
-                          cursor="pointer"
-                          fontSize="fontSize30"
-                          fontWeight="fontWeightSemibold"
+                          className="css-1i39mnm"
                         >
                           <span
-                            className="css-sncxrr"
-                            display="flex"
+                            className="css-19tcioy"
+                            color="colorText"
+                            cursor="pointer"
+                            fontSize="fontSize30"
+                            fontWeight="fontWeightSemibold"
                           >
                             <span
-                              aria-hidden="true"
-                              className="css-j6zn3d"
+                              className="css-sncxrr"
                               display="flex"
-                              height="sizeSquare50"
-                              type="radio"
-                              width="sizeSquare50"
                             >
                               <span
-                                className="css-4g659b"
-                                height="sizeSquare25"
-                                width="sizeSquare25"
-                              />
-                            </span>
-                            <span
-                              className="css-pmq22s"
-                              color="currentColor"
-                              fontSize="fontSize30"
-                              fontWeight="fontWeightNormal"
-                            >
-                              Set a start and end date
+                                aria-hidden="true"
+                                className="css-j6zn3d"
+                                display="flex"
+                                height="sizeSquare50"
+                                type="radio"
+                                width="sizeSquare50"
+                              >
+                                <span
+                                  className="css-4g659b"
+                                  height="sizeSquare25"
+                                  width="sizeSquare25"
+                                />
+                              </span>
+                              <span
+                                className="css-pmq22s"
+                                color="currentColor"
+                                fontSize="fontSize30"
+                                fontWeight="fontWeightNormal"
+                              >
+                                Set a start and end date
+                              </span>
                             </span>
                           </span>
                         </span>
@@ -1130,17 +1264,21 @@ exports[`Storyshots Full Form Full Form 1`] = `
                 htmlFor="callbackMethod"
               >
                 <span
-                  className="css-ken708"
+                  className="css-7f8gq7"
                   display="flex"
                 >
                   <span
-                    className="css-19tcioy"
-                    color="colorText"
-                    cursor="pointer"
-                    fontSize="fontSize30"
-                    fontWeight="fontWeightSemibold"
+                    className="css-1i39mnm"
                   >
-                    Callback Method
+                    <span
+                      className="css-19tcioy"
+                      color="colorText"
+                      cursor="pointer"
+                      fontSize="fontSize30"
+                      fontWeight="fontWeightSemibold"
+                    >
+                      Callback Method
+                    </span>
                   </span>
                 </span>
               </label>
@@ -1239,34 +1377,49 @@ exports[`Storyshots Full Form Full Form 1`] = `
                 htmlFor="product"
               >
                 <span
-                  className="css-ken708"
+                  className="css-7f8gq7"
                   display="flex"
                 >
                   <span
-                    className="css-12n8l5w"
-                    cursor="pointer"
-                    display="block"
-                    height="4px"
-                    width="4px"
+                    className="css-1n9kqxc"
+                    display="flex"
                   >
                     <span
-                      className="css-1cbdvo6"
-                      clip="rect(0 0 0 0)"
-                      height="1px"
-                      overflow="hidden"
-                      width="1px"
+                      className="css-18fj8c6"
+                      cursor="pointer"
+                      display="flex"
+                      height="sizeIcon30"
                     >
-                      Required: 
+                      <span
+                        className="css-17qcbxe"
+                        display="block"
+                        height="4px"
+                        width="4px"
+                      >
+                        <span
+                          className="css-1cbdvo6"
+                          clip="rect(0 0 0 0)"
+                          height="1px"
+                          overflow="hidden"
+                          width="1px"
+                        >
+                          Required: 
+                        </span>
+                      </span>
                     </span>
                   </span>
                   <span
-                    className="css-19tcioy"
-                    color="colorText"
-                    cursor="pointer"
-                    fontSize="fontSize30"
-                    fontWeight="fontWeightSemibold"
+                    className="css-1i39mnm"
                   >
-                    Product offering
+                    <span
+                      className="css-19tcioy"
+                      color="colorText"
+                      cursor="pointer"
+                      fontSize="fontSize30"
+                      fontWeight="fontWeightSemibold"
+                    >
+                      Product offering
+                    </span>
                   </span>
                 </span>
               </label>
@@ -1519,17 +1672,21 @@ exports[`Storyshots Input Basic 1`] = `
       htmlFor="emailAddress"
     >
       <span
-        className="css-ken708"
+        className="css-7f8gq7"
         display="flex"
       >
         <span
-          className="css-19tcioy"
-          color="colorText"
-          cursor="pointer"
-          fontSize="fontSize30"
-          fontWeight="fontWeightSemibold"
+          className="css-1i39mnm"
         >
-          Email Address
+          <span
+            className="css-19tcioy"
+            color="colorText"
+            cursor="pointer"
+            fontSize="fontSize30"
+            fontWeight="fontWeightSemibold"
+          >
+            Email Address
+          </span>
         </span>
       </span>
     </label>
@@ -1593,17 +1750,21 @@ exports[`Storyshots RadioGroup Basic 1`] = `
         display="block"
       >
         <span
-          className="css-ken708"
+          className="css-7f8gq7"
           display="flex"
         >
           <span
-            className="css-19tcioy"
-            color="colorText"
-            cursor="pointer"
-            fontSize="fontSize30"
-            fontWeight="fontWeightSemibold"
+            className="css-1i39mnm"
           >
-            When should your campaign run?
+            <span
+              className="css-19tcioy"
+              color="colorText"
+              cursor="pointer"
+              fontSize="fontSize30"
+              fontWeight="fontWeightSemibold"
+            >
+              When should your campaign run?
+            </span>
           </span>
         </span>
       </legend>
@@ -1639,41 +1800,45 @@ exports[`Storyshots RadioGroup Basic 1`] = `
               htmlFor="ongoing"
             >
               <span
-                className="css-ken708"
+                className="css-7f8gq7"
                 display="flex"
               >
                 <span
-                  className="css-19tcioy"
-                  color="colorText"
-                  cursor="pointer"
-                  fontSize="fontSize30"
-                  fontWeight="fontWeightSemibold"
+                  className="css-1i39mnm"
                 >
                   <span
-                    className="css-sncxrr"
-                    display="flex"
+                    className="css-19tcioy"
+                    color="colorText"
+                    cursor="pointer"
+                    fontSize="fontSize30"
+                    fontWeight="fontWeightSemibold"
                   >
                     <span
-                      aria-hidden="true"
-                      className="css-j6zn3d"
+                      className="css-sncxrr"
                       display="flex"
-                      height="sizeSquare50"
-                      type="radio"
-                      width="sizeSquare50"
                     >
                       <span
-                        className="css-4g659b"
-                        height="sizeSquare25"
-                        width="sizeSquare25"
-                      />
-                    </span>
-                    <span
-                      className="css-pmq22s"
-                      color="currentColor"
-                      fontSize="fontSize30"
-                      fontWeight="fontWeightNormal"
-                    >
-                      Run my ads as ongoing
+                        aria-hidden="true"
+                        className="css-j6zn3d"
+                        display="flex"
+                        height="sizeSquare50"
+                        type="radio"
+                        width="sizeSquare50"
+                      >
+                        <span
+                          className="css-4g659b"
+                          height="sizeSquare25"
+                          width="sizeSquare25"
+                        />
+                      </span>
+                      <span
+                        className="css-pmq22s"
+                        color="currentColor"
+                        fontSize="fontSize30"
+                        fontWeight="fontWeightNormal"
+                      >
+                        Run my ads as ongoing
+                      </span>
                     </span>
                   </span>
                 </span>
@@ -1710,41 +1875,45 @@ exports[`Storyshots RadioGroup Basic 1`] = `
               htmlFor="enddate"
             >
               <span
-                className="css-ken708"
+                className="css-7f8gq7"
                 display="flex"
               >
                 <span
-                  className="css-19tcioy"
-                  color="colorText"
-                  cursor="pointer"
-                  fontSize="fontSize30"
-                  fontWeight="fontWeightSemibold"
+                  className="css-1i39mnm"
                 >
                   <span
-                    className="css-sncxrr"
-                    display="flex"
+                    className="css-19tcioy"
+                    color="colorText"
+                    cursor="pointer"
+                    fontSize="fontSize30"
+                    fontWeight="fontWeightSemibold"
                   >
                     <span
-                      aria-hidden="true"
-                      className="css-j6zn3d"
+                      className="css-sncxrr"
                       display="flex"
-                      height="sizeSquare50"
-                      type="radio"
-                      width="sizeSquare50"
                     >
                       <span
-                        className="css-4g659b"
-                        height="sizeSquare25"
-                        width="sizeSquare25"
-                      />
-                    </span>
-                    <span
-                      className="css-pmq22s"
-                      color="currentColor"
-                      fontSize="fontSize30"
-                      fontWeight="fontWeightNormal"
-                    >
-                      Set a start and end date
+                        aria-hidden="true"
+                        className="css-j6zn3d"
+                        display="flex"
+                        height="sizeSquare50"
+                        type="radio"
+                        width="sizeSquare50"
+                      >
+                        <span
+                          className="css-4g659b"
+                          height="sizeSquare25"
+                          width="sizeSquare25"
+                        />
+                      </span>
+                      <span
+                        className="css-pmq22s"
+                        color="currentColor"
+                        fontSize="fontSize30"
+                        fontWeight="fontWeightNormal"
+                      >
+                        Set a start and end date
+                      </span>
                     </span>
                   </span>
                 </span>
@@ -1795,17 +1964,21 @@ exports[`Storyshots Select Basic 1`] = `
       htmlFor="callbackMethod"
     >
       <span
-        className="css-ken708"
+        className="css-7f8gq7"
         display="flex"
       >
         <span
-          className="css-19tcioy"
-          color="colorText"
-          cursor="pointer"
-          fontSize="fontSize30"
-          fontWeight="fontWeightSemibold"
+          className="css-1i39mnm"
         >
-          Callback Method
+          <span
+            className="css-19tcioy"
+            color="colorText"
+            cursor="pointer"
+            fontSize="fontSize30"
+            fontWeight="fontWeightSemibold"
+          >
+            Callback Method
+          </span>
         </span>
       </span>
     </label>
@@ -1931,34 +2104,49 @@ exports[`Storyshots TextArea Basic 1`] = `
       htmlFor="message"
     >
       <span
-        className="css-ken708"
+        className="css-7f8gq7"
         display="flex"
       >
         <span
-          className="css-12n8l5w"
-          cursor="pointer"
-          display="block"
-          height="4px"
-          width="4px"
+          className="css-1n9kqxc"
+          display="flex"
         >
           <span
-            className="css-1cbdvo6"
-            clip="rect(0 0 0 0)"
-            height="1px"
-            overflow="hidden"
-            width="1px"
+            className="css-18fj8c6"
+            cursor="pointer"
+            display="flex"
+            height="sizeIcon30"
           >
-            Required: 
+            <span
+              className="css-17qcbxe"
+              display="block"
+              height="4px"
+              width="4px"
+            >
+              <span
+                className="css-1cbdvo6"
+                clip="rect(0 0 0 0)"
+                height="1px"
+                overflow="hidden"
+                width="1px"
+              >
+                Required: 
+              </span>
+            </span>
           </span>
         </span>
         <span
-          className="css-19tcioy"
-          color="colorText"
-          cursor="pointer"
-          fontSize="fontSize30"
-          fontWeight="fontWeightSemibold"
+          className="css-1i39mnm"
         >
-          Message (at least 40 characters)
+          <span
+            className="css-19tcioy"
+            color="colorText"
+            cursor="pointer"
+            fontSize="fontSize30"
+            fontWeight="fontWeightSemibold"
+          >
+            Message (at least 40 characters)
+          </span>
         </span>
       </span>
     </label>

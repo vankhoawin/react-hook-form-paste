@@ -11,7 +11,6 @@ export function Select<TFormKeys extends FieldValues>(
     },
 ): React.ReactElement {
   const { registerRef: ref, ...rest } = props;
-  // @ts-ignore
   return <$Select ref={ref} {...rest} />;
 }
 
