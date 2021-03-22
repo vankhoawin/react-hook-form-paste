@@ -20,7 +20,7 @@
     "lint:fix": "yarn lint:js --fix",
     "prettier": "yarn prettier:base -- \"**/*.{json,md,scss,yaml,yml,js,jsx,ts,tsx}\"",
     "prettier:base": "prettier --config ./.prettierrc.js",
-    "build": "tsc",
+    "build": "tsc --project tsconfig.prod.json",
     "test": "jest",
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
