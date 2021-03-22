@@ -1,6 +1,6 @@
 {
   "name": "react-hook-form-paste",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "simple declarative bindings for react-hook-form and Twilio React Paste components.",
   "main": "dist/index.js",
   "repository": {
