@@ -9,6 +9,7 @@ export function RadioGroup<TKeys extends FieldValues>(
     control: Control;
     name: keyof TKeys;
     defaultValue: string;
+    // eslint-disable-next-line react/require-default-props
     rules?: any;
   },
 ): React.ReactElement {
