@@ -28,7 +28,13 @@ test('types into an input and submits the form', async () => {
 
   const { getByTestId, getByText } = render(
     <form onSubmit={handleSubmit(onSubmitFormHandler)}>
-      <RadioGroup<ITestProps> id="campaign" name="campaign" legend="When should your campaign run?" control={control}>
+      <RadioGroup<ITestProps>
+        id="campaign"
+        name="campaign"
+        legend="When should your campaign run?"
+        control={control}
+        defaultValue=""
+      >
         <Radio<ITestProps> id="ongoing" value="ongoing" name="campaign" data-testid={ONGOING_TEST_ID}>
           Run my ads as ongoing
         </Radio>
@@ -88,6 +94,7 @@ test('tests optional `onChange` event handlers', async () => {
         onChange={onChangeInputHandler}
         onFocus={onFocusInputHandler}
         onBlur={onBlurInputHandler}
+        defaultValue=""
       >
         <Radio<ITestProps> id="ongoing" value="ongoing" name="campaign" data-testid={RADIO_TEST_ID}>
           Run my ads as ongoing

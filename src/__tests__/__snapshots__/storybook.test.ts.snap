@@ -1069,6 +1069,7 @@ exports[`Storyshots Full Form Full Form 1`] = `
           >
             <fieldset
               className="css-9a3t89"
+              defaultValue=""
               id="campaign"
               name="campaign"
               onBlur={[Function]}
@@ -1110,7 +1111,7 @@ exports[`Storyshots Full Form Full Form 1`] = `
                     <input
                       aria-describedby="8"
                       aria-invalid={false}
-                      checked={true}
+                      checked={false}
                       className="css-l5ph6c"
                       clip="rect(0 0 0 0)"
                       disabled={false}
@@ -1741,6 +1742,7 @@ exports[`Storyshots RadioGroup Basic 1`] = `
   >
     <fieldset
       className="css-9a3t89"
+      defaultValue=""
       id="campaign"
       name="campaign"
       onBlur={[Function]}

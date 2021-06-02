@@ -1,4 +1,5 @@
 import { Button } from '@twilio-paste/core/button';
+import { HelpText } from '@twilio-paste/core/help-text';
 import { useForm } from 'react-hook-form';
 
 import { Radio } from '../Radio';
@@ -21,7 +22,13 @@ export const Basic: React.FC = () => {
         window.alert(JSON.stringify(payload));
       })}
     >
-      <RadioGroup<ITestProps> id="campaign" name="campaign" legend="When should your campaign run?" control={control}>
+      <RadioGroup<ITestProps>
+        id="campaign"
+        name="campaign"
+        legend="When should your campaign run?"
+        control={control}
+        defaultValue=""
+      >
         <Radio<ITestProps> id="ongoing" value="ongoing" name="campaign">
           Run my ads as ongoing
         </Radio>

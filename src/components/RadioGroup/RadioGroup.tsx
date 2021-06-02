@@ -8,14 +8,18 @@ export function RadioGroup<TKeys extends FieldValues>(
   props: RadioGroupProps & {
     control: Control;
     name: keyof TKeys;
+    defaultValue: string;
+    rules?: any;
   },
 ): React.ReactElement {
-  const { children, control, name: inputName } = props;
+  const { children, control, name: inputName, rules, defaultValue } = props;
 
   return (
     <Controller
       control={control}
       name={inputName}
+      rules={rules}
+      defaultValue={defaultValue}
       render={(renderProps) => (
         <$RadioGroup {...renderProps} {...props}>
           {children}
