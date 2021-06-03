@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/vnguyen94/react-hook-form-paste/compare/v1.1.0...v1.2.0) (2021-06-03)
+
+
+### Features
+
+* **radiogroup, textarea:** add controllerProps fields, add validation stories ([abd2964](https://github.com/vnguyen94/react-hook-form-paste/commit/abd29643b10cec8a6efa9f198de934525083435e))
+
 # [1.1.0](https://github.com/vnguyen94/react-hook-form-paste/compare/v1.0.0...v1.1.0) (2021-03-22)
 
 
