@@ -1732,6 +1732,92 @@ exports[`Storyshots Input Basic 1`] = `
 </div>
 `;
 
+exports[`Storyshots Input With Rules 1`] = `
+<div
+  className="css-ql39e"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <p
+      className="css-1n4qplb"
+      color="colorText"
+      fontSize="fontSize30"
+    >
+      Current Value: 
+    </p>
+    <hr
+      aria-orientation="horizontal"
+      className="css-120jtk4"
+      height={null}
+      width="auto"
+    />
+    <label
+      className="css-1o3qgb0"
+      display="block"
+      htmlFor="emailAddress"
+    >
+      <span
+        className="css-7f8gq7"
+        display="flex"
+      >
+        <span
+          className="css-1i39mnm"
+        >
+          <span
+            className="css-19tcioy"
+            color="colorText"
+            cursor="pointer"
+            fontSize="fontSize30"
+            fontWeight="fontWeightSemibold"
+          >
+            Email Address
+          </span>
+        </span>
+      </span>
+    </label>
+    <div
+      className="css-1kyjsrh"
+      cursor="text"
+      display="flex"
+      width="100%"
+    >
+      <input
+        className="css-1enze02"
+        id="emailAddress"
+        name="emailAddress"
+        placeholder="example@twilio.com"
+        type="email"
+      />
+    </div>
+    <button
+      aria-busy="false"
+      className="css-1kmjss9"
+      color="colorTextInverse"
+      cursor="pointer"
+      disabled={false}
+      display="inline-block"
+      fontFamily="fontFamilyText"
+      fontSize="fontSize30"
+      fontWeight="fontWeightSemibold"
+      textDecoration="none"
+      type="submit"
+      width="auto"
+    >
+      <span
+        aria-hidden="false"
+        className="css-18yvwyy"
+        display="flex"
+        opacity="1"
+        textDecoration="inherit"
+      >
+        Submit
+      </span>
+    </button>
+  </form>
+</div>
+`;
+
 exports[`Storyshots RadioGroup Basic 1`] = `
 <div
   className="css-ql39e"
@@ -1951,6 +2037,276 @@ exports[`Storyshots RadioGroup Basic 1`] = `
 </div>
 `;
 
+exports[`Storyshots RadioGroup With Rules 1`] = `
+<div
+  className="css-ql39e"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <p
+      className="css-1n4qplb"
+      color="colorText"
+      fontSize="fontSize30"
+    >
+      Current Value: 
+    </p>
+    <hr
+      aria-orientation="horizontal"
+      className="css-120jtk4"
+      height={null}
+      width="auto"
+    />
+    <fieldset
+      className="css-9a3t89"
+      id="campaign"
+      name="campaign"
+      onBlur={[Function]}
+    >
+      <legend
+        className="css-1ruk2nu"
+        display="block"
+      >
+        <span
+          className="css-7f8gq7"
+          display="flex"
+        >
+          <span
+            className="css-1i39mnm"
+          >
+            <span
+              className="css-19tcioy"
+              color="colorText"
+              cursor="pointer"
+              fontSize="fontSize30"
+              fontWeight="fontWeightSemibold"
+            >
+              When should your campaign run?
+            </span>
+          </span>
+        </span>
+      </legend>
+      <div
+        className="css-1wzbj38"
+      >
+        <div
+          className="css-xts8rf"
+          display="block"
+        >
+          <div
+            className="css-19wtf25"
+            display="inline-flex"
+          >
+            <input
+              aria-describedby="22"
+              aria-invalid={false}
+              checked={false}
+              className="css-l5ph6c"
+              clip="rect(0 0 0 0)"
+              disabled={false}
+              id="ongoing"
+              name="campaign"
+              onChange={[Function]}
+              overflow="hidden"
+              size="size0"
+              type="radio"
+              value="ongoing"
+            />
+            <label
+              className="css-1ruk2nu"
+              display="block"
+              htmlFor="ongoing"
+            >
+              <span
+                className="css-7f8gq7"
+                display="flex"
+              >
+                <span
+                  className="css-1i39mnm"
+                >
+                  <span
+                    className="css-19tcioy"
+                    color="colorText"
+                    cursor="pointer"
+                    fontSize="fontSize30"
+                    fontWeight="fontWeightSemibold"
+                  >
+                    <span
+                      className="css-sncxrr"
+                      display="flex"
+                    >
+                      <span
+                        aria-hidden="true"
+                        className="css-j6zn3d"
+                        display="flex"
+                        height="sizeSquare50"
+                        type="radio"
+                        width="sizeSquare50"
+                      >
+                        <span
+                          className="css-4g659b"
+                          height="sizeSquare25"
+                          width="sizeSquare25"
+                        />
+                      </span>
+                      <span
+                        className="css-pmq22s"
+                        color="currentColor"
+                        fontSize="fontSize30"
+                        fontWeight="fontWeightNormal"
+                      >
+                        Run my ads as ongoing
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div
+          className="css-xts8rf"
+          display="block"
+        >
+          <div
+            className="css-19wtf25"
+            display="inline-flex"
+          >
+            <input
+              aria-describedby="23"
+              aria-invalid={false}
+              checked={false}
+              className="css-l5ph6c"
+              clip="rect(0 0 0 0)"
+              disabled={false}
+              id="enddate"
+              name="campaign"
+              onChange={[Function]}
+              overflow="hidden"
+              size="size0"
+              type="radio"
+              value="enddate"
+            />
+            <label
+              className="css-1ruk2nu"
+              display="block"
+              htmlFor="enddate"
+            >
+              <span
+                className="css-7f8gq7"
+                display="flex"
+              >
+                <span
+                  className="css-1i39mnm"
+                >
+                  <span
+                    className="css-19tcioy"
+                    color="colorText"
+                    cursor="pointer"
+                    fontSize="fontSize30"
+                    fontWeight="fontWeightSemibold"
+                  >
+                    <span
+                      className="css-sncxrr"
+                      display="flex"
+                    >
+                      <span
+                        aria-hidden="true"
+                        className="css-j6zn3d"
+                        display="flex"
+                        height="sizeSquare50"
+                        type="radio"
+                        width="sizeSquare50"
+                      >
+                        <span
+                          className="css-4g659b"
+                          height="sizeSquare25"
+                          width="sizeSquare25"
+                        />
+                      </span>
+                      <span
+                        className="css-pmq22s"
+                        color="currentColor"
+                        fontSize="fontSize30"
+                        fontWeight="fontWeightNormal"
+                      >
+                        Set a start and end date
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div
+      className="css-tfro19"
+      display="flex"
+    >
+      <div
+        className="css-hn0p4t"
+      >
+        <button
+          aria-busy="false"
+          className="css-1uvrcla"
+          color="colorTextLink"
+          cursor="pointer"
+          disabled={false}
+          display="inline-block"
+          fontFamily="fontFamilyText"
+          fontSize="fontSize30"
+          fontWeight="fontWeightSemibold"
+          onClick={[Function]}
+          textDecoration="none"
+          type="button"
+          width="auto"
+        >
+          <span
+            aria-hidden="false"
+            className="css-18yvwyy"
+            display="flex"
+            opacity="1"
+            textDecoration="inherit"
+          >
+            Reset
+          </span>
+        </button>
+      </div>
+      <div
+        className="css-roynbj"
+      >
+        <button
+          aria-busy="false"
+          className="css-1kmjss9"
+          color="colorTextInverse"
+          cursor="pointer"
+          disabled={false}
+          display="inline-block"
+          fontFamily="fontFamilyText"
+          fontSize="fontSize30"
+          fontWeight="fontWeightSemibold"
+          textDecoration="none"
+          type="submit"
+          width="auto"
+        >
+          <span
+            aria-hidden="false"
+            className="css-18yvwyy"
+            display="flex"
+            opacity="1"
+            textDecoration="inherit"
+          >
+            Submit
+          </span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
 exports[`Storyshots Select Basic 1`] = `
 <div
   className="css-ql39e"
@@ -2047,7 +2403,7 @@ exports[`Storyshots Select Basic 1`] = `
           >
             <svg
               aria-hidden={true}
-              aria-labelledby="ChevronDownIcon-22"
+              aria-labelledby="ChevronDownIcon-25"
               height="100%"
               role="img"
               viewBox="0 0 20 20"
