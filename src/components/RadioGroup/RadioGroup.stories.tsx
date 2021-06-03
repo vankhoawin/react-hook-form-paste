@@ -30,7 +30,9 @@ export const Basic: React.FC = () => {
         name="campaign"
         legend="When should your campaign run?"
         control={control}
-        controllerProps={{ defaultValue: '' }}
+        controllerProps={{
+          defaultValue: '',
+        }}
       >
         <Radio<ITestProps> id="ongoing" value="ongoing" name="campaign">
           Run my ads as ongoing
@@ -69,15 +71,7 @@ export const WithRules: React.FC = () => {
         control={control}
         controllerProps={{
           defaultValue: '',
-          rules: {
-            validate: (value) => {
-              if (!value.length) {
-                return 'Please provide a value.';
-              }
-
-              return true;
-            },
-          },
+          rules: { required: 'Please provide a value.' },
         }}
       >
         <Radio<ITestProps> id="ongoing" value="ongoing" name="campaign">
