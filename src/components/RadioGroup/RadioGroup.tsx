@@ -1,4 +1,4 @@
-import { Control, Controller, FieldValues } from 'react-hook-form';
+import { Control, Controller, ControllerProps, FieldValues } from 'react-hook-form';
 import { RadioGroup as $RadioGroup, RadioGroupProps as $RadioGroupProps } from '@twilio-paste/core/radio-group';
 
 export type RadioGroupProps = Omit<$RadioGroupProps, 'value' | 'onChange' | 'ref'> &
@@ -8,19 +8,17 @@ export function RadioGroup<TKeys extends FieldValues>(
   props: RadioGroupProps & {
     control: Control;
     name: keyof TKeys;
-    defaultValue: string;
     // eslint-disable-next-line react/require-default-props
-    rules?: any;
+    controllerProps?: Pick<ControllerProps<typeof $RadioGroup, FieldValues>, 'rules' | 'defaultValue'>;
   },
 ): React.ReactElement {
-  const { children, control, name: inputName, rules, defaultValue } = props;
+  const { children, control, name: inputName, controllerProps } = props;
 
   return (
     <Controller
       control={control}
+      {...controllerProps}
       name={inputName}
-      rules={rules}
-      defaultValue={defaultValue}
       render={(renderProps) => (
         <$RadioGroup {...renderProps} {...props}>
           {children}

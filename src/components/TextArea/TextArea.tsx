@@ -1,4 +1,4 @@
-import { Control, Controller, FieldValues } from 'react-hook-form';
+import { Control, Controller, ControllerProps, FieldValues } from 'react-hook-form';
 import { TextArea as $TextArea, TextAreaProps as $TextAreaProps } from '@twilio-paste/core/textarea';
 
 export function TextArea<TKeys extends FieldValues>(
@@ -6,11 +6,18 @@ export function TextArea<TKeys extends FieldValues>(
     Partial<Pick<$TextAreaProps, 'onChange' | 'value'>> & {
       control: Control;
       name: keyof TKeys;
+      // eslint-disable-next-line react/require-default-props
+      controllerProps?: Pick<ControllerProps<typeof $TextArea, FieldValues>, 'rules' | 'defaultValue'>;
     },
 ): React.ReactElement {
-  const { control, name, ...rest } = props;
+  const { control, controllerProps, name, ...rest } = props;
   return (
-    <Controller control={control} name={name} render={(renderProps) => <$TextArea {...renderProps} {...rest} />} />
+    <Controller<typeof $TextArea, FieldValues>
+      control={control}
+      {...controllerProps}
+      name={name}
+      render={(renderProps) => <$TextArea {...renderProps} {...rest} />}
+    />
   );
 }
 

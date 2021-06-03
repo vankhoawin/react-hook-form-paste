@@ -143,7 +143,6 @@ export const FullForm: React.FC = () => {
               name="campaign"
               legend="When should your campaign run?"
               control={control}
-              defaultValue=""
             >
               <Radio<IFormProps> id="ongoing" value="ongoing" name="campaign">
                 Run my ads as ongoing
