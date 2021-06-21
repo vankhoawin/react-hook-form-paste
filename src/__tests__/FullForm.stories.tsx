@@ -100,7 +100,7 @@ export const FullForm: React.FC = () => {
             <Text as="p">{message.length} characters</Text>
           </Box>
 
-          <CheckboxGroup<IFormProps> controllerProps={{ control, name: 'fruits' }} legend="Fruits">
+          <CheckboxGroup<IFormProps> name="fruits" legend="Fruits">
             <Checkbox {...register('fruits')} id="apples" value="apple">
               Apples
             </Checkbox>
