@@ -986,6 +986,7 @@ exports[`Storyshots Full Form Full Form 1`] = `
             >
               <fieldset
                 className="css-9a3t89"
+                name="fruits"
               >
                 <legend
                   className="css-1ruk2nu"
