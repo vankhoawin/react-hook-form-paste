@@ -1,14 +1,17 @@
 import { Alert } from '@twilio-paste/core/alert';
+import { Box } from '@twilio-paste/core/box';
 import { Button } from '@twilio-paste/core/button';
 import { Label } from '@twilio-paste/core/label';
-import { Text } from '@twilio-paste/core/text';
-import { Separator } from '@twilio-paste/core/separator';
+import { Stack } from '@twilio-paste/core/stack';
 import { useForm } from 'react-hook-form';
 
+import { StorybookComponentWrapper } from '../../utils/StorybookComponentWrapper';
 import { Input } from './Input';
 
 export default {
   title: 'Input',
+  component: Input,
+  parameters: { actions: { argTypesRegex: '^on.*' } },
 };
 
 interface ITestProps {
@@ -16,57 +19,63 @@ interface ITestProps {
 }
 
 export const Basic: React.FC = () => {
-  const { register, handleSubmit } = useForm();
+  const useFormMethods = useForm<ITestProps>();
+  const { register, handleSubmit } = useFormMethods;
 
   return (
-    <form
-      onSubmit={handleSubmit((payload) => {
-        window.alert(JSON.stringify(payload));
-      })}
-    >
-      <Label htmlFor="emailAddress">Email Address</Label>
-      <Input<ITestProps>
-        id="emailAddress"
-        name="emailAddress"
-        type="email"
-        placeholder="example@twilio.com"
-        registerRef={register}
-      />
+    <StorybookComponentWrapper useFormMethods={useFormMethods} title="Input">
+      <form
+        onSubmit={handleSubmit((payload) => {
+          window.alert(JSON.stringify(payload));
+        })}
+      >
+        <Stack orientation="vertical" spacing="space80">
+          <Box>
+            <Label htmlFor="emailAddress">Email Address</Label>
+            <Input type="email" placeholder="example@twilio.com" {...register('emailAddress')} />
+          </Box>
 
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </form>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+        </Stack>
+      </form>
+    </StorybookComponentWrapper>
   );
 };
 
 export const WithRules: React.FC = () => {
-  const { register, handleSubmit, errors, watch } = useForm<ITestProps>();
-  const currentValue = watch('emailAddress');
+  const useFormMethods = useForm<ITestProps>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useFormMethods;
 
   return (
-    <form
-      onSubmit={handleSubmit((payload) => {
-        window.alert(JSON.stringify(payload));
-      })}
-    >
-      <Text as="p">Current Value: {currentValue}</Text>
-      <Separator orientation="horizontal" verticalSpacing="space30" />
+    <StorybookComponentWrapper useFormMethods={useFormMethods} title="Input">
+      <form
+        onSubmit={handleSubmit((payload) => {
+          window.alert(JSON.stringify(payload));
+        })}
+      >
+        <Stack orientation="vertical" spacing="space80">
+          {errors.emailAddress?.message && <Alert variant="error">{errors.emailAddress.message}</Alert>}
 
-      {errors.emailAddress?.message && <Alert variant="error">{errors.emailAddress.message}</Alert>}
+          <Box>
+            <Label htmlFor="emailAddress">Email Address</Label>
+            <Input
+              type="email"
+              placeholder="example@twilio.com"
+              {...register('emailAddress', { required: 'You must provide an email.' })}
+            />
+          </Box>
 
-      <Label htmlFor="emailAddress">Email Address</Label>
-      <Input<ITestProps>
-        id="emailAddress"
-        name="emailAddress"
-        type="email"
-        placeholder="example@twilio.com"
-        registerRef={register({ required: 'You must provide an email.' })}
-      />
-
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </form>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+        </Stack>
+      </form>
+    </StorybookComponentWrapper>
   );
 };

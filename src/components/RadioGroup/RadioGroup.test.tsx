@@ -1,13 +1,10 @@
-import * as TestRenderer from 'react-test-renderer';
 import { useForm } from 'react-hook-form';
-import { fireEvent, render } from '@testing-library/react';
+import { act, fireEvent, render } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
 import { Button } from '@twilio-paste/core/button';
 
 import { Radio } from '../Radio';
 import { RadioGroup } from './RadioGroup';
-
-const { act } = TestRenderer;
 
 interface ITestProps {
   campaign: string;
@@ -28,7 +25,14 @@ test('types into an input and submits the form', async () => {
 
   const { getByTestId, getByText } = render(
     <form onSubmit={handleSubmit(onSubmitFormHandler)}>
-      <RadioGroup<ITestProps> id="campaign" name="campaign" legend="When should your campaign run?" control={control}>
+      <RadioGroup<ITestProps>
+        controllerProps={{
+          name: 'campaign',
+          control,
+        }}
+        id="campaign"
+        legend="When should your campaign run?"
+      >
         <Radio<ITestProps> id="ongoing" value="ongoing" name="campaign" data-testid={ONGOING_TEST_ID}>
           Run my ads as ongoing
         </Radio>
@@ -82,9 +86,11 @@ test('tests optional `onChange` event handlers', async () => {
     <form onSubmit={handleSubmit(onSubmitFormHandler)}>
       <RadioGroup<ITestProps>
         id="campaign"
-        name="campaign"
+        controllerProps={{
+          name: 'campaign',
+          control,
+        }}
         legend="When should your campaign run?"
-        control={control}
         onChange={onChangeInputHandler}
         onFocus={onFocusInputHandler}
         onBlur={onBlurInputHandler}

@@ -1,29 +1,28 @@
-import { Control, Controller, ControllerProps, FieldValues } from 'react-hook-form';
+import { UseControllerProps, useController, FieldValues } from 'react-hook-form';
 import { RadioGroup as $RadioGroup, RadioGroupProps as $RadioGroupProps } from '@twilio-paste/core/radio-group';
 
-export type RadioGroupProps = Omit<$RadioGroupProps, 'value' | 'onChange' | 'ref'> &
-  Partial<Pick<$RadioGroupProps, 'onChange'>>;
-
-export function RadioGroup<TKeys extends FieldValues>(
-  props: RadioGroupProps & {
-    control: Control;
-    name: keyof TKeys;
-    // eslint-disable-next-line react/require-default-props
-    controllerProps?: Pick<ControllerProps<typeof $RadioGroup, FieldValues>, 'rules' | 'defaultValue'>;
-  },
+export function RadioGroup<TFieldValues extends FieldValues>(
+  props: Omit<$RadioGroupProps, 'name' | 'onChange'> &
+    Pick<Partial<$RadioGroupProps>, 'onChange'> & {
+      controllerProps: UseControllerProps<TFieldValues>;
+    },
 ): React.ReactElement {
-  const { children, control, name: inputName, controllerProps } = props;
+  const { controllerProps, ...rest } = props;
+  const { field: radioGroupProps } = useController(controllerProps);
 
   return (
-    <Controller
-      control={control}
-      {...controllerProps}
-      name={inputName}
-      render={(renderProps) => (
-        <$RadioGroup {...renderProps} {...props}>
-          {children}
-        </$RadioGroup>
-      )}
+    // @ts-ignore
+    <$RadioGroup
+      {...radioGroupProps}
+      {...rest}
+      onChange={(checked) => {
+        radioGroupProps.onChange(checked);
+        rest.onChange?.(checked);
+      }}
+      onBlur={(event) => {
+        radioGroupProps.onBlur();
+        rest.onBlur?.(event);
+      }}
     />
   );
 }

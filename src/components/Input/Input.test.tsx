@@ -1,13 +1,10 @@
-import { fireEvent, render } from '@testing-library/react';
+import { act, fireEvent, render } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
 import { Button } from '@twilio-paste/core/button';
 import { Label } from '@twilio-paste/core/label';
-import * as TestRenderer from 'react-test-renderer';
 import { useForm } from 'react-hook-form';
 
 import { Input } from './Input';
-
-const { act } = TestRenderer;
 
 interface ITestProps {
   emailAddress: string;
@@ -22,13 +19,7 @@ test('types into an input and submits the form', async () => {
   const { getByLabelText, getByText } = render(
     <form onSubmit={handleSubmit(onSubmitFormHandler)}>
       <Label htmlFor="emailAddress">Email Address</Label>
-      <Input<ITestProps>
-        id="emailAddress"
-        name="emailAddress"
-        type="email"
-        placeholder="example@twilio.com"
-        registerRef={register}
-      />
+      <Input {...register('emailAddress')} id="emailAddress" type="email" placeholder="example@twilio.com" />
       <Button variant="primary" type="submit">
         Submit
       </Button>
@@ -60,12 +51,11 @@ test("tests `onSubmit`, `onChange` and `onBlur` event handlers'", async () => {
   const { getByLabelText, getByText } = render(
     <form onSubmit={handleSubmit(onSubmitFormHandler)}>
       <Label htmlFor="emailAddress">Email Address</Label>
-      <Input<ITestProps>
+      <Input
+        {...register('emailAddress')}
         id="emailAddress"
-        name="emailAddress"
         type="email"
         placeholder="example@twilio.com"
-        registerRef={register}
         onChange={onChangeInputHandler}
         onBlur={onBlurInputHandler}
       />

@@ -1,14 +1,11 @@
 import { useForm } from 'react-hook-form';
-import * as TestRenderer from 'react-test-renderer';
 import { fireEvent, render } from '@testing-library/react';
-import { renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react-hooks';
 import { Button } from '@twilio-paste/core/button';
 import { Label } from '@twilio-paste/core/label';
 import { Text } from '@twilio-paste/core/text';
 
 import { TextArea } from './TextArea';
-
-const { act } = TestRenderer;
 
 interface ITestProps {
   message: string;
@@ -34,9 +31,11 @@ test('types into the textarea and submits the form', async () => {
       </Label>
       <TextArea<ITestProps>
         id="message"
-        name="message"
         placeholder="Enter message"
-        control={control}
+        controllerProps={{
+          control,
+          name: 'message',
+        }}
         data-testid={TEST_ID}
       />
       <Text as="p">{message.length} characters</Text>
@@ -83,9 +82,11 @@ test('tests optional `onChange` and `onBlur` event handlers', async () => {
       </Label>
       <TextArea<ITestProps>
         id="message"
-        name="message"
         placeholder="Enter message"
-        control={control}
+        controllerProps={{
+          control,
+          name: 'message',
+        }}
         onChange={onChangeInputHandler}
         onBlur={onBlurInputHandler}
         data-testid={TEST_ID}
