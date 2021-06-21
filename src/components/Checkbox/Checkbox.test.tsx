@@ -1,12 +1,9 @@
-import * as TestRenderer from 'react-test-renderer';
 import { useForm } from 'react-hook-form';
-import { fireEvent, render, waitFor } from '@testing-library/react';
+import { act, fireEvent, render, waitFor } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
 import { Button } from '@twilio-paste/core/button';
 
 import { Checkbox } from './Checkbox';
-
-const { act } = TestRenderer;
 
 interface ITestProps {
   checkbox: string;
@@ -20,7 +17,7 @@ test('checks and unchecks a checkbox', async () => {
 
   const { getByTestId, getByText } = render(
     <form onSubmit={handleSubmit(onSubmitFormHandler)}>
-      <Checkbox<ITestProps> id="id" data-testid={TEST_ID} name="checkbox" registerRef={register}>
+      <Checkbox {...register('checkbox')} data-testid={TEST_ID}>
         I declare the information provided above is accurate. I acknowledge that Twilio will process the information
         provided above for the purpose of identity verification, and will be sharing it with my local telecomm providers
         or authorities where required by local law. I understand that Twilio phone numbers may be taken out of service

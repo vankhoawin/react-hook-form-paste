@@ -1,14 +1,11 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { act, fireEvent, render, screen } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
 import { Button } from '@twilio-paste/core/button';
 import { Label } from '@twilio-paste/core/label';
-import * as TestRenderer from 'react-test-renderer';
 import { useForm } from 'react-hook-form';
 
 import { Option } from '../Option';
 import { Select } from './Select';
-
-const { act } = TestRenderer;
 
 interface ITestProps {
   callbackMethod: string;
@@ -22,7 +19,7 @@ test('type into an input and submit the form', async () => {
   render(
     <form onSubmit={handleSubmit(onSubmitFormHandler)}>
       <Label htmlFor="callbackMethod">Callback Method</Label>
-      <Select<ITestProps> required id="callbackMethod" name="callbackMethod" registerRef={register}>
+      <Select {...register('callbackMethod')} required={true} id="callbackMethod">
         <Option value="get">GET</Option>
         <Option value="post">POST</Option>
         <Option value="put">PUT</Option>
@@ -57,11 +54,10 @@ test('tests optional `onChange` and `onBlur` event handlers', async () => {
   render(
     <form onSubmit={handleSubmit(onSubmitFormHandler)}>
       <Label htmlFor="callbackMethod">Callback Method</Label>
-      <Select<ITestProps>
-        required
+      <Select
+        {...register('callbackMethod')}
+        required={true}
         id="callbackMethod"
-        name="callbackMethod"
-        registerRef={register}
         onChange={onChangeFormHandler}
         onFocus={onFocusFormHandler}
         onBlur={onBlurFormHandler}

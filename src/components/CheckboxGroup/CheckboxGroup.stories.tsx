@@ -1,6 +1,7 @@
 import { Button } from '@twilio-paste/core/button';
 import { useForm } from 'react-hook-form';
 
+import { StorybookComponentWrapper } from '../../utils/StorybookComponentWrapper';
 import { Checkbox } from '../Checkbox';
 import { CheckboxGroup } from './CheckboxGroup';
 
@@ -13,30 +14,39 @@ interface ITestProps {
 }
 
 export const Basic: React.FC = () => {
-  const { register, handleSubmit } = useForm<ITestProps>({
+  const useFormMethods = useForm<ITestProps>({
     defaultValues: {
       campaign: ['ongoing'],
     },
   });
+  const { register, handleSubmit } = useFormMethods;
 
   return (
-    <form
-      onSubmit={handleSubmit((payload) => {
-        window.alert(JSON.stringify(payload));
-      })}
-    >
-      <CheckboxGroup name="campaign" legend="When should your campaign run?">
-        <Checkbox<ITestProps> id="ongoing" name="campaign" value="ongoing" registerRef={register}>
-          Run my ads as ongoing
-        </Checkbox>
-        <Checkbox<ITestProps> id="enddate" name="campaign" value="enddate" registerRef={register}>
-          Set a start and end date
-        </Checkbox>
-      </CheckboxGroup>
+    <StorybookComponentWrapper useFormMethods={useFormMethods} title="Checkbox">
+      <form
+        onSubmit={handleSubmit((payload) => {
+          window.alert(JSON.stringify(payload));
+        })}
+      >
+        <CheckboxGroup<ITestProps>
+          name="campaign"
+          legend="When should your campaign run?"
+          onChange={() => {
+            window.alert('ive changed.');
+          }}
+        >
+          <Checkbox {...register('campaign')} id="ongoing" value="ongoing">
+            Run my ads as ongoing
+          </Checkbox>
+          <Checkbox {...register('campaign')} id="enddate" value="enddate">
+            Set a start and end date
+          </Checkbox>
+        </CheckboxGroup>
 
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </form>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </form>
+    </StorybookComponentWrapper>
   );
 };
