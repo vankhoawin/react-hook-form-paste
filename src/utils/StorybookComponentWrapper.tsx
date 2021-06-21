@@ -3,7 +3,7 @@ import { Column, Grid } from '@twilio-paste/core/grid';
 import { Heading } from '@twilio-paste/core/heading';
 import { Card } from '@twilio-paste/core/card';
 import * as React from 'react';
-import { Control, FieldValues, UseFormMethods, useWatch } from 'react-hook-form';
+import { Control, FieldValues, UseFormReturn, useWatch } from 'react-hook-form';
 
 function Payload<TFieldValues extends FieldValues>({ control }: { control: Control<TFieldValues> }) {
   // @ts-ignore
@@ -30,7 +30,7 @@ export function StorybookComponentWrapper<TFieldValues extends FieldValues>({
 }: {
   children: React.ReactChild;
   title: string;
-  useFormMethods: UseFormMethods<TFieldValues>;
+  useFormMethods: UseFormReturn<TFieldValues>;
 }): React.ReactElement {
   return (
     <Grid gutter="space30">

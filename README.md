@@ -6,6 +6,8 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/vnguyen94/react-hook-form-paste/badge.svg?targetFile=package.json)](https://snyk.io/test/github/vnguyen94/react-hook-form-paste?targetFile=package.json)
 [![codecov](https://codecov.io/gh/vnguyen94/react-hook-form-paste/branch/main/graph/badge.svg?token=KNvD6Yw3Fs)](https://codecov.io/gh/vnguyen94/react-hook-form-paste)
 
+> **If you require react-hook-form v6, use the [last supported release version](https://github.com/vnguyen94/react-hook-form-paste/releases/tag/v1.2.0).**
+
 Super-charged [Paste](https://paste.twilio.design) components using [react-hook-form](https://github.com/react-hook-form/react-hook-form) to handle form state.
 
 This library lightly wraps Paste components to seamlessly integrate with `react-hook-form`, and handle abstraction wherever needed.
