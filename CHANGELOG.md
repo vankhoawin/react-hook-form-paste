@@ -1,3 +1,20 @@
+# [2.0.0](https://github.com/vnguyen94/react-hook-form-paste/compare/v1.2.0...v2.0.0) (2021-06-21)
+
+
+### Bug Fixes
+
+* fix type issues ([#10](https://github.com/vnguyen94/react-hook-form-paste/issues/10)) ([800886c](https://github.com/vnguyen94/react-hook-form-paste/commit/800886c11f86aacfa21467d69322302792a7fd28))
+
+
+* BREAKING CHANGE: support react-hook-form v7 breaking API changes (#9) ([2e5535c](https://github.com/vnguyen94/react-hook-form-paste/commit/2e5535c29be4560765a363dcfb088e689188d493)), closes [#9](https://github.com/vnguyen94/react-hook-form-paste/issues/9)
+
+
+### BREAKING CHANGES
+
+* support react-hook-form v7 breaking API changes
+
+* ci: bump node versions for testing
+
 # [1.2.0](https://github.com/vnguyen94/react-hook-form-paste/compare/v1.1.0...v1.2.0) (2021-06-03)
 
 ### Features
